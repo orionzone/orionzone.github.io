@@ -19,21 +19,6 @@
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
-    <script>
-        var themeModelId = '';
-        if (themeModelId) {
-            localStorage.setItem('modelId', themeModelId);
-        }
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
-    <script>
-        var live2dOpen = eval('true') || false;
-        if (!live2dOpen) {
-            localStorage.setItem('waifu-display', 1609323474481);
-        }
-    </script>
-  
   
   
 <link rel="stylesheet" href="/css/animate.min.css">
@@ -63,7 +48,7 @@
     <!-- import link -->
     
         
-            
+            <link href="/custom/index.css" rel="stylesheet">
         
             
         
@@ -96,30 +81,6 @@
   <body>
     <!-- 预加载动画 -->
     <!-- 页面预加载动画 -->
-
-<div id='loader'>
-  <link rel="stylesheet" href="/js/loaded/index.css" >
-  <div class="loading-left-bg"></div>
-  <div class="loading-right-bg"></div>
-  <div class="spinner-box">
-    <div class="configure-border-1">
-      <div class="configure-core"></div>
-    </div>
-    <div class="configure-border-2">
-      <div class="configure-core"></div>
-    </div>
-    <div class="loading-word">loading...</div>
-  </div>
-</div>
-
-<script>
-  var endLoading = function () {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loader').classList.add("loading");
-  }
-  window.addEventListener('DOMContentLoaded',endLoading);
-  
-</script>
 
     
     <!-- 判断是否为暗黑风格 -->
@@ -225,7 +186,7 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+      <img class="drawer-box-head_logo" src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
       <h3 class="drawer-box-head_title">snowgo</h3>
       <h5 class="drawer-box-head_desc"></h5>
     </div>
@@ -302,47 +263,12 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/bangumis" class="drawer-menu-item-link">
+                <a href="/chatgpt" class="drawer-menu-item-link">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
-                  <span>
-                    
-                      <i class="fas fa-link"></i>
-                    
-                    <span class="name">更多</span>
-                  </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
-                </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(7)">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -409,7 +335,7 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+          <img src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
         </div>
       
       <a href="/" class="logo">snowgo</a>
@@ -486,45 +412,12 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/bangumis" class="menu-item-link" title="追番">
+                <a href="/chatgpt" class="menu-item-link" title="ChatGPT">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="javascript:;" class="menu-item-link" title="更多">
-                  
-                    <i class="fas fa-link"></i>
-                  
-                  <span class="name">更多</span>
-                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
-                </a>
-                <ul class="sub-menu">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -643,7 +536,13 @@
 </header>
         <!-- 内容区域 -->
         
-  <!-- 首页轮播 -->
+  
+                <link href="./snowgo_files/index(2).css" rel="stylesheet">
+                  <div class="root">
+  <div class="wrap title ani  fadeInDown animated flag-text-content">
+    
+      <div>snowgo</div></div> </div> 
+                
   
 
   <link href="/js/vue-typed-js/index.css" rel="stylesheet">
@@ -653,502 +552,39 @@
 
 
 
-<div class="swiper-length" style="display: none;">3</div>
+<div class="swiper-length" style="display: none;">0</div>
 <div id="appSwiper"
-  class=""
+  class="swiper-no-swiping"
   @mouseenter="stopAutoPlay()" 
   @mouseleave="startAutoPlay()"
 >
   <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     
-      
-        <swiper-slide>
-          <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B81.png" style="background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-            <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag">
-                
-                <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B81.png" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+      <swiper-slide>
+        <div class="item swiper-lazy" data-background="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg" style="background-size: 300000px; 
+          background-position: left center;" style="position: relative;">
+          <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+            <div class="flag">
+              
+              <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg" style="height: 100%; background-size: cover; 
+                background-position: center center;">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+              </div>
+              <div class="flag-text">
+                <div class="flag-text-content">
+                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">snowgo</div>
+                  
+                      <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"></div>
+                    
                 </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">消える飛行機雲</div>
-                    
-                      <div  class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                        <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="50">
-                          <h1 class="typing"></h1>
-                        </vue-typed-js>
-                      </div>
-                      
-                  </div>
-                  <div style="display: flex;" class="flag-text-btns">
-                    
-                    
-                  </div>
+                <div style="display: flex;" class="flag-text-btns">
+                  
+                  
                 </div>
               </div>
+            </div>
           </div>
-        </swiper-slide>
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/">
-                        linux之io多路复用与epoll
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">IO 多路复用概述I/O 多路复用技术是为了解决进程或线程阻塞到某个 I/O 系统调用而出现的技术，使进程不阻塞于某个特定的 I/O 系统调用。在IO多路复用技术描述前，先讲解下同步，异步，阻塞，非阻塞的概念。
-网络IO模型linux网络I</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">Read More</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/2021/07/28/fastai%E6%95%99%E7%A8%8B/">
-                        fastai教程
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">快速预览应用123456##默认是抓取图像中心进行裁剪item tfms=Resize(128)##改为将图像进行拉伸Resize(128, ResizeMethod.Squish)##改为将不足的区域进行填充（这里zero可以改成refl</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/2021/07/28/fastai%E6%95%99%E7%A8%8B/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">Read More</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/14.jpg" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/14.jpg" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%20/">
-                        Bilibili直播姬命令行版使用指南
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-下载与安装https://rec.danmuji.org/docs/cli/选择对应的版本后解压，打开终端，cd到解压后的文件夹
-录制直接输入./BililiveRecorder.Cli portable “存储视频的路径” 房间号即可开</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%20/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">Read More</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-    <div class="swiper-pagination" slot="pagination" pointer style="display: none;"></div>
-    <div class="swiper-button-prev swiper-button-white" pointer slot="button-prev" style=""></div>
-    <div class="swiper-button-next swiper-button-white" pointer slot="button-next" style=""></div>
+      </swiper-slide>
     
   </swiper>
   
@@ -1159,23 +595,9 @@
     </div>
   
   <canvas id="header_canvas"style="position:absolute;bottom:0;width:100%;pointer-events:none;"></canvas>
-  
-    <svg class="hans-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none"><defs><path id="hans-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="hans-parallax"><use xlink:href="#hans-wave" x="50" y="0" fill="rgba(224,233,239,.5)"></use><use xlink:href="#hans-wave" x="50" y="3" fill="rgba(224,233,239,.5)"></use><use xlink:href="#hans-wave" x="50" y="6" fill="rgba(224,233,239,.5)"></use></g></svg>
     
 </div>
 
-
-<style>.hans-parallax>use{animation:hans-wave-move 12s linear infinite}.hans-parallax>use:nth-child(1){animation-delay:-2s}.hans-parallax>use:nth-child(2){animation-delay:-2s;animation-duration:5s}.hans-parallax>use:nth-child(3){animation-delay:-4s;animation-duration:3s}@keyframes hans-wave-move{0%{transform:translate(-90px,0)}100%{transform:translate(85px,0)}}</style>
-<style>
-  .hans-container {
-    position: absolute!important;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 100;
-    pointer-events:none;
-  }
-</style>
 
 
 <script>
@@ -1184,7 +606,7 @@
   var loop = JSON.parse('true') ? false : JSON.parse('true');
   var effect = 'slide';
   var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
-  var defaultDesc = '追いかけて追いかけて,願いだけ秘めて見つめてる';
+  var defaultDesc = '';
   defaultDesc = defaultDesc.split(',');
   var defaultDescTypedLoop = JSON.parse('true');
   var vm = new Vue({
@@ -1738,11 +1160,11 @@
     <div class="widget my_github_container" id="my_github_container" style="order: -1;background: #fff">
       <header>
         
-          <a style="color: blue" target="_blank" rel="noopener" href='https://github.com/snowgo/'><i class="fas fa-envelope fa-fw" aria-hidden="true"></i><span class='name'>测试日历</span></a>
+          <a style="color: #006600" target="_blank" rel="noopener" href='https://github.com/snowgo'><i class="fa-solid fa-calendar-days fa-fw" aria-hidden="true"></i><span class='name'>Github日历</span></a>
         
       </header>
       <div class="content">
-         <div id="github_container"></div> <script data-pjax src="/githubcalendar/index.js"></script> 
+         <img no-lazy width="100%" hright="300px" src="https://ghchart.rshah.org/006600/snowgo" alt="snowgo github" /> 
       </div>
   </div>
   
@@ -1751,124 +1173,6 @@
     
     <!-- 首页公告 -->
     
-<style>
-  .index-notice-content {
-    margin-top: 10px;
-  }
-  .warp {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .index-notice-content__ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .index-notice-content__ul li,
-  .index-notice-content__ul a {
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-  }
-  .index-notice-content__title {
-    flex: 1;
-    overflow: hidden;
-  }
-  .index-notice-content__title a,
-  .index-notice-content__title span {
-    overflow: hidden;
-    display: block;
-    text-overflow:ellipsis; 
-    white-space: nowrap;
-    height: 100%;
-    width: 100%;
-    color: #000;
-  }
-  .index-notice-content__title a:hover,
-  .index-notice-content__title span:hover {
-    text-decoration: underline;
-  }
-  .index-notice-content__date {
-    min-width: 80px;
-    margin-left: 5px;
-    color: #000;
-  }
-</style>
-<div class="index-notice" id="appIndexNotice">
-    <h3>
-      <i class="fas fa-bullhorn index-notice-icon"></i>公告
-    </h3>
-    <div class="index-notice-content">
-      
-      <vue-seamless-scroll
-        :data="listData"
-        :class-option="classOption"
-        class="warp"
-        style="height: 30px"
-      >
-        <ul class="index-notice-content__ul">
-          
-          
-            <li>
-              
-                <div class="index-notice-content__title">
-                  
-                    <span title="#博客更新到2.7.1了" style="color:#010202">
-                      #博客更新到2.7.1了
-                    </span>
-                  
-                </div>
-                
-                  <div class="index-notice-content__date" style="color:#010202">
-                    2022-01-20
-                  </div>
-                
-              
-            </li>
-           
-        </ul>
-      </vue-seamless-scroll>
-    </div>
-</div>
-<script src="/js/vue-seamless-scroll/index.js"></script>
-
-<!-- 滚动插件采用 vue-seamless-scroll
-  https://chenxuan0000.github.io/vue-seamless-scroll/zh/guide/06-singleStop.html 
--->
-
-<script>
-  var seamless = JSON.parse('false');
-  seamless = seamless ? 0 : 30;
-  var listData = '[object Object]' || '';
-  listData = listData.split(',');
-  var vm = new Vue({
-    el: '#appIndexNotice',
-    data: {
-      listData: listData,
-      moveNum: 2,
-      classOption: {
-        singleHeight: seamless,
-        limitMoveNum: listData.length
-      },
-    },
-    computed: {
-    },
-    mounted() {
-    },
-    methods: {
-    },
-    created() {
-      this.moveNum = parseInt(this.listData.length);
-    }
-  })
-</script>
-
-
-
     <!-- 首页文章置顶 -->
     
 
@@ -1920,15 +1224,143 @@
 			
 		
 			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 				<div class="article-link">
 					
 					<div class="article" style="background-size: cover; 
 						background-position: center center;">
-						<img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+						<img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" alt="">
 					</div>
 					<div class="text">
 						<div class="text-main">
-							<div class="title"><a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/">linux之io多路复用与epoll</a></div>
+							<div class="title"><a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/">Linux之io多路复用与epoll</a></div>
 							<div class="content">
 								IO 多路复用概述I/O 多路复用技术是为了解决进程或线程阻塞到某个 I/O 系统调用而出现的技术，使进程不阻塞于某个特
 							</div>
@@ -2047,39 +1479,17 @@
 			
 		
 			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
 				<div class="article-link">
 					
 					<div class="article" style="background-size: cover; 
 						background-position: center center;">
-						<img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+						<img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" alt="">
 					</div>
 					<div class="text">
 						<div class="text-main">
 							<div class="title"><a href="/2021/07/28/fastai%E6%95%99%E7%A8%8B/">fastai教程</a></div>
 							<div class="content">
-								快速预览应用123456##默认是抓取图像中心进行裁剪item tfms=Resize(128)##改为将图像进行拉伸R
+								快速预览应用123456#默认是抓取图像中心进行裁剪item tfms=Resize(128)#改为将图像进行拉伸Res
 							</div>
 						</div>
 						<a href="/2021/07/28/fastai%E6%95%99%E7%A8%8B/" class="more">
@@ -2158,25 +1568,21 @@
 			
 		
 			
-		
-			
-		
-			
 				<div class="article-link">
 					
 					<div class="article" style="background-size: cover; 
 						background-position: center center;">
-						<img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/14.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/14.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+						<img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/14.jpg" alt="">
 					</div>
 					<div class="text">
 						<div class="text-main">
-							<div class="title"><a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%20/">Bilibili直播姬命令行版使用指南</a></div>
+							<div class="title"><a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97_/">Bilibili直播姬命令行版使用指南</a></div>
 							<div class="content">
 								
 下载与安装https://rec.danmuji.org/docs/cli/选择对应的版本后解压，打开终端，cd到解压
 							</div>
 						</div>
-						<a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%20/" class="more">
+						<a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97_/" class="more">
 							<i class="fas fa-eye" aria-hidden="true"></i>Read More
 						</a>
 					</div>
@@ -2199,245 +1605,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-13</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/">go分析题之for循环里执行协程，打印i值</a>
+            <a class="post-title-link" href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/">Kubernetes核心指标监控——Metrics_Server详解</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            情况一123456789101112131415package mainimport (	&quot;fmt&quot;)func main() &#123;	for i := 0; i &lt; 5; i++ &#123;		go fun
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-13</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/">go能重载吗</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            实验12345678910111213141516171819202122232425262728293031323334353637package mainimport &quot;fmt&quot;//Person类型，实现了一个方法f
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-09</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/">go切片作为函数参数会被改变吗</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            slice 其实是一个结构体，包含了三个成员：len, cap, array。分别表示切片长度，容量，底层数据的地址。当 slice 作为函数参数时，就是一个普通的结构体。其实很好理解：若直接传 slice，在调用者看来，实参 slice 
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-09</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">正向代理和反向代理</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            一句话描述代理AKA假装，正向代理也就是假装proxy是客户端，反向代理代理的是服务端假装自己是服务器让client来访问。
-作用正向代理
-科学上网
-加速访问
-缓存数据 
-授权访问
-隐藏访问者
-
-反向代理
-保护服务器 
-负载均衡
-
-
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-08</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/">go算法题整理之剑指offer</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -2452,25 +1630,25 @@
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/" style="background-size: cover; 
+            <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/580.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            链表从尾到头打印链表123456789101112131415161718192021222324252627package mainimport . &quot;nc_tools&quot;/* * type ListNode struc
+            1、概述从Kubernetes v1.8 开始，资源使用情况的监控可以通过 Metrics API的形式获取，例如容器CPU和内存使用率。这些度量可以由用户直接访问（例如，通过使用kubectl top命令），或者由集群中的控制器（例如，H
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/">
+          <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/" style="background-size: cover; 
+        <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/580.jpg" alt="">
         </a>
       </div>
     </article>
@@ -2481,17 +1659,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-07</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/06/07/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%85%AC%E7%94%A8ssh%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93key/">多台电脑公用ssh远程仓库key</a>
+            <a class="post-title-link" href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/">iptables部署和使用</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iptables/" rel="tag">iptables</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -2499,32 +1677,36 @@
 
 <div class="article-category">
   <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a>
 </div>
 
 
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/06/07/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%85%AC%E7%94%A8ssh%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93key/" style="background-size: cover; 
+            <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/142.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/142.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/741.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            首先我们得生成一个ssh密钥放到git仓库去具体步骤参考链接：https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connectin
+            1.iptables是什么？
+iptables是开源的基于数据包过滤的防火墙工具。
+
+2.iptables企业应用场景
+1、主机防火墙（filter表的INPUT链）。2、局域网共享上网(nat表的POSTROUTING链)。半个路由器，N
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/06/07/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%85%AC%E7%94%A8ssh%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93key/">
+          <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/06/07/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%85%AC%E7%94%A8ssh%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93key/" style="background-size: cover; 
+        <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/142.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/142.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/741.jpg" alt="">
         </a>
       </div>
     </article>
@@ -2535,10 +1717,292 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-05</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/06/05/goland%E5%88%87%E6%8D%A2go%E7%89%88%E6%9C%AC/">goland切换go版本</a>
+            <a class="post-title-link" href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/">基于真实场景解读K8S_Pod的各种异常</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/596.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            在 K8s 中，Pod 作为工作负载的运行载体，是最为核心的一个资源对象。Pod 具有复杂的生命周期，在其生命周期的每一个阶段，可能发生多种不同的异常情况。K8s 作为一个复杂系统，异常诊断往往要求强大的知识和经验储备。结合实战经历以及 E
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/596.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2023-01-05</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/">理解K8S的设计精髓之List-Watch机制和Informer模块</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/27.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            1. 前言最近想深入了解一下K8S的内部通信机制，因此读了几遍K8S的源码，感慨很深。至今清楚的记得，当了解到K8S组件之间仅采用HTTP 协议通信，没有依赖中间件时，我非常好奇它是如何做到的。
+在K8S内部通信中，肯定要保证消息的实时性。
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/27.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2023-01-02</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/">SRE工作手册读书笔记一</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sre/" rel="tag">sre</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/66.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            序言11.致力于设定清晰的、量化的服务承诺
+2.通过有限的监控指标，持续地觉知， 进入精确的量化管理
+3.轮值人员随时待命，确保实现所做出的服务目标承诺，同时避免过度的人工干预，谨防自动化形同虚设
+序言2
+可共用的服务才是有价值的服务，而S
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/66.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2023-01-02</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%BA%8C-SRE%E4%BA%94%E5%A4%A7%E6%A0%B9%E5%9F%BA%E4%B9%8BSLO/">SRE工作手册读书笔记二-SRE五大根基之SLO</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sre/" rel="tag">sre</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%BA%8C-SRE%E4%BA%94%E5%A4%A7%E6%A0%B9%E5%9F%BA%E4%B9%8BSLO/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/320.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            SRE工作手册读书笔记二-SRE五大根基之SLO五大根基
+简单化
+减少琐事
+告警
+监控
+实施SLO五大根基的关系Google希望有一套可以作为数据决策的东西来指导整个运维的一些工作。当然如果要有SLO的话那监控室必不可少的，因为要有监控去观
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%BA%8C-SRE%E4%BA%94%E5%A4%A7%E6%A0%B9%E5%9F%BA%E4%B9%8BSLO/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%BA%8C-SRE%E4%BA%94%E5%A4%A7%E6%A0%B9%E5%9F%BA%E4%B9%8BSLO/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/320.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2023-01-02</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/">lxcfs让pod正确的意识到给自己分配的资源</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/552.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            背景
+在使用docker的时候，我们为了限制某个容器使用的资源，常常使用cgroup的资源限制来限制容器最大能使用的CPU和内存资源等。
+但是对于一些app，它往往会自动检测当前环境的最大资源数量，然后根据这个数据来合理分配资源。问题就出在
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/552.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-12-21</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/12/21/%E7%94%A8Go%E5%A4%84%E7%90%86ACM%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">用Go处理ACM模式下的输入输出</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
@@ -2560,82 +2024,25 @@
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/06/05/goland%E5%88%87%E6%8D%A2go%E7%89%88%E6%9C%AC/" style="background-size: cover; 
+            <a href="/2022/12/21/%E7%94%A8Go%E5%A4%84%E7%90%86ACM%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/103.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/103.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/64.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            方法只需要切换goland设置里的goroot，之后apply，不起作用的话重新打开一下项目就行了
-
+            一、用 fmt 包实现简单读取数字1. 每行数字数量固定不知道行数1234567891011121314输入描述:输入包括两个正整数 a,b(1 &lt;= a, b &lt;= 1000),输入数据包括多组。输出描述:输出a+b的结果输入
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/06/05/goland%E5%88%87%E6%8D%A2go%E7%89%88%E6%9C%AC/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/06/05/goland%E5%88%87%E6%8D%A2go%E7%89%88%E6%9C%AC/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/103.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/103.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-05</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/">将本地项目push到github</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/59.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/59.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            初始化再当前项目下git init
-添加文件git add .git commit -m &quot; &quot;
-在github上新建一个仓库并与本地关联根据使用的协议，远程URL可以以HTTPS或SSH开头。如果未指定协议，则默认为S
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/">
+          <a href="/2022/12/21/%E7%94%A8Go%E5%A4%84%E7%90%86ACM%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/" style="background-size: cover; 
+        <a href="/2022/12/21/%E7%94%A8Go%E5%A4%84%E7%90%86ACM%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/59.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/59.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/64.jpg" alt="">
         </a>
       </div>
     </article>
@@ -2646,17 +2053,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-03</span>
+            <span class="post-time">2022-12-19</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/">go闭包中值的传递</a>
+            <a class="post-title-link" href="/2022/12/19/Jenkins_Pipeline/">Jenkins_Pipeline</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -2664,33 +2071,32 @@
 
 <div class="article-category">
   <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+  <a class="article-category-link" href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a>
 </div>
 
 
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/" style="background-size: cover; 
+            <a href="/2022/12/19/Jenkins_Pipeline/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/123.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/123.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/588.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            go闭包中对外部变量是以引用的形式传递进去，如下代码所示：
-123456789101112131415package mainfunc main() &#123;	var funcSlice []func()	for i := 0; i &
+            要实现在 Jenkins 中的构建工作，可以有多种方式，我们这里采用比较常用的 Pipeline 这种方式。Pipeline，简单来说，就是一套运行在 Jenkins 上的工作流框架，将原来独立运行于单个或者多个节点的任务连接起来，实现单个
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/">
+          <a href="/2022/12/19/Jenkins_Pipeline/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/" style="background-size: cover; 
+        <a href="/2022/12/19/Jenkins_Pipeline/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/123.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/123.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/588.jpg" alt="">
         </a>
       </div>
     </article>
@@ -2701,17 +2107,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-05-30</span>
+            <span class="post-time">2022-12-18</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/">shell系列题之转置文件的内容</a>
+            <a class="post-title-link" href="/2022/12/18/Kubernetes%E5%AD%98%E5%82%A8%E4%B9%8BLocal%E5%AD%98%E5%82%A8/">Kubernetes存储之Local存储</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -2719,34 +2125,32 @@
 
 <div class="article-category">
   <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+  <a class="article-category-link" href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a>
 </div>
 
 
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/" style="background-size: cover; 
+            <a href="/2022/12/18/Kubernetes%E5%AD%98%E5%82%A8%E4%B9%8BLocal%E5%AD%98%E5%82%A8/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/189.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/189.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/467.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            描述写一个 bash脚本来转置文本文件nowcoder.txt中的文件内容。
-为了简单起见，你可以假设：你可以假设每行列数相同，并且每个字段由空格分隔
-示例:假设 nowcoder.txt 内容如下：job salaryc++ 13java
+            前面我们有通过 hostPath 或者 emptyDir 的方式来持久化我们的数据，但是显然我们还需要更加可靠的存储来保存应用的持久化数据，这样容器在重建后，依然可以使用之前的数据。但是存储资源和 CPU 资源以及内存资源有很大不同，为了屏
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/">
+          <a href="/2022/12/18/Kubernetes%E5%AD%98%E5%82%A8%E4%B9%8BLocal%E5%AD%98%E5%82%A8/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/" style="background-size: cover; 
+        <a href="/2022/12/18/Kubernetes%E5%AD%98%E5%82%A8%E4%B9%8BLocal%E5%AD%98%E5%82%A8/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/189.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/189.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/467.jpg" alt="">
         </a>
       </div>
     </article>
@@ -2755,12 +2159,12 @@
     <!-- 翻页 -->
     
   <!-- <nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/2/">Next</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/2/">Next</a>
   </nav> -->
   <div class="page-nav">
     
     <div class="page-info">
-        <div class="page-info-text">1 / 13</div>
+        <div class="page-info-text">1 / 18</div>
     </div>
     
       <a href="/page/2/"
@@ -2782,7 +2186,7 @@
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img src='https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/nightanime.jpg'/>
+          <img src='https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/nightanime.jpg'/>
         </a>
       
     
@@ -2792,32 +2196,11 @@
           <h2>❄️snowgo❄️</h2>
         
         
-          <p>どうぞ</p>
-
-        
         
       </div>
     
     
       <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/2145083610@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
         
           
             <a href="https://github.com/snowgo/"
@@ -2868,17 +2251,12 @@
             <li><a class="flat-box"
               title="/categories/BIGDATA/" href="/categories/BIGDATA/"
               id="categoriesBIGDATA"
-              ><div class='name'>BIGDATA</div><div class='badge'>(1)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/BigData/" href="/categories/BigData/"
-              id="categoriesBigData"
-              ><div class='name'>BigData</div><div class='badge'>(1)</div></a></li>
+              ><div class='name'>BIGDATA</div><div class='badge'>(2)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/DL/" href="/categories/DL/"
               id="categoriesDL"
-              ><div class='name'>DL</div><div class='badge'>(16)</div></a></li>
+              ><div class='name'>DL</div><div class='badge'>(14)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/DataAnalysis/" href="/categories/DataAnalysis/"
@@ -2893,7 +2271,7 @@
             <li><a class="flat-box"
               title="/categories/INTERESTING/" href="/categories/INTERESTING/"
               id="categoriesINTERESTING"
-              ><div class='name'>INTERESTING</div><div class='badge'>(3)</div></a></li>
+              ><div class='name'>INTERESTING</div><div class='badge'>(2)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/JAVA/" href="/categories/JAVA/"
@@ -2911,11 +2289,6 @@
               ><div class='name'>ML</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
-              title="/categories/MySQL/" href="/categories/MySQL/"
-              id="categoriesMySQL"
-              ><div class='name'>MySQL</div><div class='badge'>(2)</div></a></li>
-          
-            <li><a class="flat-box"
               title="/categories/PAPER/" href="/categories/PAPER/"
               id="categoriesPAPER"
               ><div class='name'>PAPER</div><div class='badge'>(1)</div></a></li>
@@ -2923,7 +2296,7 @@
             <li><a class="flat-box"
               title="/categories/TOOLS/" href="/categories/TOOLS/"
               id="categoriesTOOLS"
-              ><div class='name'>TOOLS</div><div class='badge'>(7)</div></a></li>
+              ><div class='name'>TOOLS</div><div class='badge'>(6)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" href="/categories/java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"
@@ -2936,19 +2309,24 @@
               ><div class='name'>《网络是怎样连接的》</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
-              title="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"
-              id="categoriesE68A80E69CAFE6A088"
-              ><div class='name'>技术栈</div><div class='badge'>(13)</div></a></li>
+              title="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/" href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/"
+              id="categoriesE4BA91E58E9FE7949F"
+              ><div class='name'>云原生</div><div class='badge'>(4)</div></a></li>
           
             <li><a class="flat-box"
-              title="/categories/%E6%96%99%E7%90%86/" href="/categories/%E6%96%99%E7%90%86/"
-              id="categoriesE69699E79086"
-              ><div class='name'>料理</div><div class='badge'>(1)</div></a></li>
+              title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
+              id="categoriesE5B7A5E585B7"
+              ><div class='name'>工具</div><div class='badge'>(1)</div></a></li>
+          
+            <li><a class="flat-box"
+              title="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"
+              id="categoriesE68A80E69CAFE6A088"
+              ><div class='name'>技术栈</div><div class='badge'>(36)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/%E6%97%A5%E6%8A%A5/" href="/categories/%E6%97%A5%E6%8A%A5/"
               id="categoriesE697A5E68AA5"
-              ><div class='name'>日报</div><div class='badge'>(2)</div></a></li>
+              ><div class='name'>日报</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/%E7%90%86%E8%B4%A2/" href="/categories/%E7%90%86%E8%B4%A2/"
@@ -2956,19 +2334,14 @@
               ><div class='name'>理财</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
+              title="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+              id="categoriesE8AFBBE4B9A6E7AC94E8AEB0"
+              ><div class='name'>读书笔记</div><div class='badge'>(2)</div></a></li>
+          
+            <li><a class="flat-box"
               title="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/"
               id="categoriesE997AEE9A298E5928CE68A80E5B7A7"
-              ><div class='name'>问题和技巧</div><div class='badge'>(47)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"
-              id="categoriesE99DA2E8AF95E9A298"
-              ><div class='name'>面试题</div><div class='badge'>(2)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
-              id="categoriesE9A1B9E79BAE"
-              ><div class='name'>项目</div><div class='badge'>(3)</div></a></li>
+              ><div class='name'>问题和技巧</div><div class='badge'>(81)</div></a></li>
           
         </ul>
       </div>
@@ -2988,7 +2361,7 @@
 
 
     <div class='content'>
-    <a href="/tags/IELTS/" style="font-size: 15.25px; color: #919191">IELTS</a> <a href="/tags/Linux/" style="font-size: 16.5px; color: #888">Linux</a> <a href="/tags/MySQL/" style="font-size: 15.25px; color: #919191">MySQL</a> <a href="/tags/Pyecharts/" style="font-size: 14px; color: #999">Pyecharts</a> <a href="/tags/UUID/" style="font-size: 14px; color: #999">UUID</a> <a href="/tags/bigdata/" style="font-size: 14px; color: #999">bigdata</a> <a href="/tags/devops/" style="font-size: 14px; color: #999">devops</a> <a href="/tags/dl/" style="font-size: 24px; color: #555">dl</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/flink/" style="font-size: 14px; color: #999">flink</a> <a href="/tags/git/" style="font-size: 20.25px; color: #6f6f6f">git</a> <a href="/tags/go/" style="font-size: 24px; color: #555">go</a> <a href="/tags/gpu/" style="font-size: 14px; color: #999">gpu</a> <a href="/tags/interesting/" style="font-size: 15.25px; color: #919191">interesting</a> <a href="/tags/java/" style="font-size: 22.75px; color: #5e5e5e">java</a> <a href="/tags/linux/" style="font-size: 16.5px; color: #888">linux</a> <a href="/tags/math/" style="font-size: 16.5px; color: #888">math</a> <a href="/tags/ml/" style="font-size: 14px; color: #999">ml</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/numpy/" style="font-size: 14px; color: #999">numpy</a> <a href="/tags/paper/" style="font-size: 14px; color: #999">paper</a> <a href="/tags/pip/" style="font-size: 14px; color: #999">pip</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/scala/" style="font-size: 14px; color: #999">scala</a> <a href="/tags/shell/" style="font-size: 21.5px; color: #666">shell</a> <a href="/tags/spark/" style="font-size: 15.25px; color: #919191">spark</a> <a href="/tags/sre/" style="font-size: 14px; color: #999">sre</a> <a href="/tags/ssh/" style="font-size: 14px; color: #999">ssh</a> <a href="/tags/tool/" style="font-size: 14px; color: #999">tool</a> <a href="/tags/tools/" style="font-size: 19px; color: #777">tools</a> <a href="/tags/%E4%B8%AD%E5%9B%BD%E6%96%99%E7%90%86/" style="font-size: 14px; color: #999">中国料理</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">反射</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 16.5px; color: #888">操作系统</a> <a href="/tags/%E6%94%B6%E7%9B%8A%E6%8C%87%E6%A0%87/" style="font-size: 14px; color: #999">收益指标</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/" style="font-size: 16.5px; color: #888">数据仓库</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 14px; color: #999">数据库</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%97%A5%E6%8A%A5/" style="font-size: 15.25px; color: #919191">日报</a> <a href="/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/" style="font-size: 14px; color: #999">智力题</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 17.75px; color: #808080">计算机网络</a> <a href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" style="font-size: 14px; color: #999">负载均衡</a>
+    <a href="/tags/Docker/" style="font-size: 14px; color: #999">Docker</a> <a href="/tags/GitOps/" style="font-size: 14px; color: #999">GitOps</a> <a href="/tags/IELTS/" style="font-size: 14.91px; color: #939393">IELTS</a> <a href="/tags/LVS/" style="font-size: 14px; color: #999">LVS</a> <a href="/tags/Linux/" style="font-size: 24px; color: #555">Linux</a> <a href="/tags/Pyecharts/" style="font-size: 14px; color: #999">Pyecharts</a> <a href="/tags/UUID/" style="font-size: 14px; color: #999">UUID</a> <a href="/tags/bigdata/" style="font-size: 14px; color: #999">bigdata</a> <a href="/tags/devops/" style="font-size: 14px; color: #999">devops</a> <a href="/tags/dl/" style="font-size: 22.18px; color: #616161">dl</a> <a href="/tags/docker/" style="font-size: 14.91px; color: #939393">docker</a> <a href="/tags/ebpf/" style="font-size: 14px; color: #999">ebpf</a> <a href="/tags/flink/" style="font-size: 14px; color: #999">flink</a> <a href="/tags/gateway/" style="font-size: 14px; color: #999">gateway</a> <a href="/tags/git/" style="font-size: 18.55px; color: #7a7a7a">git</a> <a href="/tags/go/" style="font-size: 23.09px; color: #5b5b5b">go</a> <a href="/tags/gpu/" style="font-size: 14px; color: #999">gpu</a> <a href="/tags/interesting/" style="font-size: 14.91px; color: #939393">interesting</a> <a href="/tags/iptables/" style="font-size: 14.91px; color: #939393">iptables</a> <a href="/tags/istio/" style="font-size: 14px; color: #999">istio</a> <a href="/tags/java/" style="font-size: 21.27px; color: #686868">java</a> <a href="/tags/k8s/" style="font-size: 20.36px; color: #6e6e6e">k8s</a> <a href="/tags/keepalived/" style="font-size: 14px; color: #999">keepalived</a> <a href="/tags/math/" style="font-size: 15.82px; color: #8d8d8d">math</a> <a href="/tags/ml/" style="font-size: 14px; color: #999">ml</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/numpy/" style="font-size: 14px; color: #999">numpy</a> <a href="/tags/paper/" style="font-size: 14px; color: #999">paper</a> <a href="/tags/pip/" style="font-size: 14px; color: #999">pip</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/shell/" style="font-size: 19.45px; color: #747474">shell</a> <a href="/tags/spark/" style="font-size: 14.91px; color: #939393">spark</a> <a href="/tags/sre/" style="font-size: 15.82px; color: #8d8d8d">sre</a> <a href="/tags/tool/" style="font-size: 14px; color: #999">tool</a> <a href="/tags/tools/" style="font-size: 17.64px; color: #808080">tools</a> <a href="/tags/yaml/" style="font-size: 14px; color: #999">yaml</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14.91px; color: #939393">加密</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">反射</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 14.91px; color: #939393">操作系统</a> <a href="/tags/%E6%94%B6%E7%9B%8A%E6%8C%87%E6%A0%87/" style="font-size: 14px; color: #999">收益指标</a> <a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 14px; color: #999">效率</a> <a href="/tags/%E6%97%A5%E6%8A%A5/" style="font-size: 14px; color: #999">日报</a> <a href="/tags/%E6%9C%AC%E7%AB%99%E8%B5%B7%E6%BA%90/" style="font-size: 14px; color: #999">本站起源</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 16.73px; color: #868686">计算机网络</a> <a href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" style="font-size: 14px; color: #999">负载均衡</a>
     </div>
 </section>
 
@@ -3016,18 +2389,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/580.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-13</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/">go分析题之for循环里执行协程，打印i值</a>
+              <a class="post-title" href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/">Kubernetes核心指标监控——Metrics_Server详解</a>
             </div>
           </div>
         
@@ -3037,18 +2410,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/741.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-13</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/">go能重载吗</a>
+              <a class="post-title" href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/">iptables部署和使用</a>
             </div>
           </div>
         
@@ -3058,18 +2431,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/596.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-09</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/">go切片作为函数参数会被改变吗</a>
+              <a class="post-title" href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/">基于真实场景解读K8S_Pod的各种异常</a>
             </div>
           </div>
         
@@ -3079,18 +2452,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/27.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-09</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">正向代理和反向代理</a>
+              <a class="post-title" href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/">理解K8S的设计精髓之List-Watch机制和Informer模块</a>
             </div>
           </div>
         
@@ -3100,18 +2473,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/66.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-08</span>
+                  <span class="post-date">01-02</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/">go算法题整理之剑指offer</a>
+              <a class="post-title" href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/">SRE工作手册读书笔记一</a>
             </div>
           </div>
         
@@ -3122,7 +2495,7 @@
     
   <section class="widget side_archives">
     
-    <header><a style="color: red" href='/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">June 2022</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">May 2022</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">April 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">March 2022</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">February 2022</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">November 2021</span><span class="card-archive-list-count">3</span></a></li></ul></div>
+    <header><a style="color: red" href='/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">September 2022</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">August 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">July 2022</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">June 2022</span><span class="card-archive-list-count">23</span></a></li></ul></div>
   </section>
 
     <section class="widget side_webinfo">
@@ -3139,7 +2512,7 @@
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>124 篇</div>
+          <div>175 篇</div>
         </div>
       
 
@@ -3161,7 +2534,7 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>221.6k 字</div>
+          <div>273.5k 字</div>
         </div>
       
 
@@ -3173,8 +2546,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Thu Jun 16 2022 10:30:27 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2022-06-16 日</div>
+            <div id="last-update" style="display: none;">Wed Jun 28 2023 21:32:38 GMT+0800 (China Standard Time)</div>
+            <div id="last-update-show">2023-06-28 日</div>
           
         </div>
         
@@ -3224,7 +2597,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2022-06-16 日';
+            document.getElementById('last-update-show').innerHTML = '2023-06-28 日';
           }
         </script>
         
@@ -3257,7 +2630,13 @@
 <!-- 雪花和花瓣特效 -->
 
   
-    <script src="/js/falling/sakura.js"></script>
+    <script type="text/javascript">
+      //只在桌面版网页启用特效
+      var windowWidth = $(window).width();
+      if (windowWidth > 768) {
+        loadScript('/js/falling/sakura.js');
+      }
+    </script>
   
 
 
@@ -3271,7 +2650,8 @@
     <!-- 页脚 -->
     
   
-  <!-- 底部鱼儿跳动效果，依赖于jquery-->
+  
+    <!-- 底部鱼儿跳动效果，依赖于jquery-->
 <div id="j-fish-skip" style=" position: relative;height: 153px;width: auto;"></div>
 <script>
   var RENDERER = {
@@ -3428,6 +2808,7 @@
     })
   });
 </script>
+  
   <div class="footer bg-color">
     <div class="footer-main">
       
@@ -3439,7 +2820,7 @@
       
         
           <div class="footer-copyright">
-            <p>Copyright © 2020 - 2022 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra" style="display: inline-block;  vertical-align: middle;"><img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" align="absmiddle" width="59px" height="30px" /></a></p>
+            <p>Copyright © 2020 - 2023 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">鲁ICP备2022021620号-1</a> </p>
 
           </div>
         
@@ -3450,6 +2831,8 @@
       
         
           <div class="footer-custom">
+            
+              <div><div style="width:300px;margin:0 auto; padding:20px 0;"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37140202001145" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://snowgo.top/medias/1.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37140202001145号</p></a></div></div>
             
           </div>
         
@@ -3521,12 +2904,16 @@
 <style>
 .aplayer .aplayer-lrc p {
   
+  display: none;
+  
   font-size: 12px;
   font-weight: 700;
   line-height: 16px !important;
 }
 
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
   
   font-size: 15px;
   color: #010202;
@@ -3547,7 +2934,7 @@
   class=""
   server="netease"
   type="playlist"
-  id="2303619958"
+  id="7133935892"
   fixed='true'
   autoplay='false'
   theme='#010202'
@@ -3975,13 +3362,14 @@
 
 <div class="pjax-animate">
   
-    <div class="loading-circle"><div id="loader-circle"></div></div>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
     <script>
       window.ShowLoading = function() {
-        $(".loading-circle").css("display", "block");
+        NProgress.start();
       };
       window.HideLoading = function() {
-        $(".loading-circle").css("display", "none");
+        NProgress.done();
       }
     </script>
   

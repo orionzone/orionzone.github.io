@@ -95,20 +95,20 @@ html,
 *[cursor-default] {
   background-color: #f2f2f2;
   font-size: 16px;
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Arrow.cur"), auto;
+  cursor: url("https://snowgo.top/cur/c1.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Arrow.cur"), auto;
 }
 a:hover,
 .swiper-pagination-bullet,
 .danmuBtn,
 *[pointer] {
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer !important;
+  cursor: url("https://snowgo.top/cur/c2.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer !important;
 }
 p,
 input,
 pre code,
 textarea,
 *[text] {
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Arrow.cur"), text;
+  cursor: url("https://snowgo.top/cur/c1.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Arrow.cur"), text;
 }
 .fancybox-container .fancybox-stage {
   cursor: url(""), zoom-out !important;
@@ -175,7 +175,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #fff;
 }
 .bg-floor {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   transition: all 0.3s;
 }
@@ -217,7 +217,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   margin-left: 8px;
 }
 #l_main .l_content .widget {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 20px -6px rgba(0,0,0,0.5);
@@ -344,7 +344,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 #l_side .side_blogger .content .text {
   line-height: 1.6;
-  font-family: Long Cang, cursive;
+  font-family: 手札体-简;
 }
 #l_side .side_blogger .content .text :first-child {
   margin-top: 16px;
@@ -901,7 +901,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   width: 100%;
   height: 300px;
   display: flex;
-  margin-top: 30px;
+  margin-bottom: 16px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -1164,6 +1164,9 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   display: flex;
   box-sizing: border-box;
 }
+.post-detail-content {
+  padding-bottom: 10px;
+}
 .justify-position {
   justify-content: space-between;
 }
@@ -1181,6 +1184,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #273849;
   width: 300px;
   padding: 0 10px;
+  margin-top: 10px;
   background-color: rgba(255,255,255,0.8);
 }
 @media screen and (max-width: 992px) {
@@ -1300,7 +1304,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   background-color: rgba(255,255,255,0.8);
   border-radius: 10px;
   box-shadow: 0 0 5px #ccc;
-  font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, Microsoft YaHei, Hiragino Sans GB, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 手札体-简;
   position: relative;
 /* 代码块复制按钮 */
 /* 代码块复制按钮 */
@@ -1442,7 +1446,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   margin-bottom: 1rem;
   font-weight: bold;
   line-height: 1.4;
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Arrow.cur"), text;
+  cursor: url("https://snowgo.top/cur/c1.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Arrow.cur"), text;
   color: #273849;
 }
 .post-detail h1:focus,
@@ -1782,7 +1786,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #42b983;
 }
 .bg-light-floor-tags {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -1932,7 +1936,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #42b983;
 }
 .bg-light-floor-categories {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2078,7 +2082,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .page-nav .page-nav-pre,
 .page-nav .page-nav-next {
@@ -2120,8 +2124,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 .topArticle {
   width: 100%;
-  margin: 20px auto;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   background: #fff;
   box-shadow: 0 1px 20px -6px rgba(0,0,0,0.5);
   padding: 20px;
@@ -2272,8 +2275,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 .motto {
   width: 100%;
-  margin: 10px auto;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   background: #fff;
   box-shadow: 0 1px 20px -6px rgba(0,0,0,0.5);
   padding: 20px;
@@ -2298,8 +2300,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 .index-notice {
   width: 100%;
-  margin: 20px auto;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   background: #fff;
   box-shadow: 0 1px 20px -6px rgba(0,0,0,0.5);
   padding: 20px;
@@ -2523,7 +2524,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   word-break: break-all;
 }
 .bg-light-floor-archive {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2745,7 +2746,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   line-height: 18px;
 }
 .bg-light-floor-tagDetail {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2856,6 +2857,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 .tag .tag-name {
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 }
 .tag .tag-name .name {
   display: inline-block;
@@ -2869,7 +2871,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-radius: 10px;
 }
 .bg-light-floor-categoryDetail {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2980,6 +2982,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 .category .category-name {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .category .category-name .name {
   display: inline-block;
@@ -2993,7 +2996,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-radius: 10px;
 }
 .bg-light-floor-friends {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -3158,7 +3161,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   }
 }
 .bg-light-floor-about {
-  background: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B82.png");
+  background: url("https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -3674,17 +3677,14 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 #gitalk-container {
   background: rgba(255,255,255,0.8);
   padding: 1em;
-  margin: 10px 0;
 }
 #gitment-ctn {
   background: rgba(255,255,255,0.8);
   padding: 1em;
-  margin: 10px 0;
 }
 #gitment-container {
   background: rgba(255,255,255,0.8);
   padding: 1em;
-  margin: 10px 0;
 }
 #waline-box {
   padding: 1em;
@@ -3720,7 +3720,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   padding: 0 15px;
   height: 100%;
   line-height: 60px;
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer;
+  cursor: url("https://snowgo.top/cur/c2.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer;
   transition: background-color 0.3s;
 }
 .search:hover {
@@ -4210,7 +4210,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   text-align: center;
   box-shadow: -2px 2px 2px 2px rgba(255,255,255,0.5);
   font-size: 14px;
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer;
+  cursor: url("https://snowgo.top/cur/c2.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer;
   transition: background-color 0.3s;
   z-index: 999;
 }
@@ -4312,7 +4312,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   line-height: 50px;
   text-align: center;
   box-shadow: -2px 2px 2px 2px rgba(255,255,255,0.5);
-  cursor: url("https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer;
+  cursor: url("https://snowgo.top/cur/c2.cur#https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/keqing_cu/%E5%88%BB%E6%99%B4/Button.cur"), pointer;
   transition: background-color 0.3s;
   z-index: 999;
   box-sizing: border-box;

@@ -19,21 +19,6 @@
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
-    <script>
-        var themeModelId = '';
-        if (themeModelId) {
-            localStorage.setItem('modelId', themeModelId);
-        }
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
-    <script>
-        var live2dOpen = eval('true') || false;
-        if (!live2dOpen) {
-            localStorage.setItem('waifu-display', 1609323474481);
-        }
-    </script>
-  
   
   
 <link rel="stylesheet" href="/css/animate.min.css">
@@ -63,7 +48,7 @@
     <!-- import link -->
     
         
-            
+            <link href="/custom/index.css" rel="stylesheet">
         
             
         
@@ -96,30 +81,6 @@
   <body>
     <!-- 预加载动画 -->
     <!-- 页面预加载动画 -->
-
-<div id='loader'>
-  <link rel="stylesheet" href="/js/loaded/index.css" >
-  <div class="loading-left-bg"></div>
-  <div class="loading-right-bg"></div>
-  <div class="spinner-box">
-    <div class="configure-border-1">
-      <div class="configure-core"></div>
-    </div>
-    <div class="configure-border-2">
-      <div class="configure-core"></div>
-    </div>
-    <div class="loading-word">loading...</div>
-  </div>
-</div>
-
-<script>
-  var endLoading = function () {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loader').classList.add("loading");
-  }
-  window.addEventListener('DOMContentLoaded',endLoading);
-  
-</script>
 
     
     <!-- 判断是否为暗黑风格 -->
@@ -225,7 +186,7 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+      <img class="drawer-box-head_logo" src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
       <h3 class="drawer-box-head_title">snowgo</h3>
       <h5 class="drawer-box-head_desc"></h5>
     </div>
@@ -302,47 +263,12 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/bangumis" class="drawer-menu-item-link">
+                <a href="/chatgpt" class="drawer-menu-item-link">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
-                  <span>
-                    
-                      <i class="fas fa-link"></i>
-                    
-                    <span class="name">更多</span>
-                  </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
-                </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(7)">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -409,7 +335,7 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+          <img src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
         </div>
       
       <a href="/" class="logo">snowgo</a>
@@ -486,45 +412,12 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/bangumis" class="menu-item-link" title="追番">
+                <a href="/chatgpt" class="menu-item-link" title="ChatGPT">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="javascript:;" class="menu-item-link" title="更多">
-                  
-                    <i class="fas fa-link"></i>
-                  
-                  <span class="name">更多</span>
-                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
-                </a>
-                <ul class="sub-menu">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -647,7 +540,7 @@
 <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
 <div class="bg-light-floor-categoryDetail" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
 
-<div class="category-header"  style="background-image:url('https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/15.jpg')">
+<div class="category-header"  style="background-image:url('https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/15.jpg')">
   <div class="category-header-title">
     category
   </div>
@@ -678,7 +571,7 @@
 
 <div class="category-video">
   <video class="full-video" autoplay loop muted>
-      <source style="width: 100%;height: 100vh;" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/none">
+      <source style="width: 100%;height: 100vh;" src="https://snowgo.top/medias/none">
   </video>
   <div class="video-header-title">
     category
@@ -722,17 +615,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-06-08</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/">go算法题整理之剑指offer</a>
+            <a class="post-title-link" href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/">Kubernetes核心指标监控——Metrics_Server详解</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -747,25 +640,25 @@
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/" style="background-size: cover; 
+            <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/580.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            链表从尾到头打印链表123456789101112131415161718192021222324252627package mainimport . &quot;nc_tools&quot;/* * type ListNode struc
+            1、概述从Kubernetes v1.8 开始，资源使用情况的监控可以通过 Metrics API的形式获取，例如容器CPU和内存使用率。这些度量可以由用户直接访问（例如，通过使用kubectl top命令），或者由集群中的控制器（例如，H
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/">
+          <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/" style="background-size: cover; 
+        <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/580.jpg" alt="">
         </a>
       </div>
     </article>
@@ -776,17 +669,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-05-09</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/">linux之io多路复用与epoll</a>
+            <a class="post-title-link" href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/">iptables部署和使用</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iptables/" rel="tag">iptables</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -801,26 +694,29 @@
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/" style="background-size: cover; 
+            <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/741.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            IO 多路复用概述I/O 多路复用技术是为了解决进程或线程阻塞到某个 I/O 系统调用而出现的技术，使进程不阻塞于某个特定的 I/O 系统调用。在IO多路复用技术描述前，先讲解下同步，异步，阻塞，非阻塞的概念。
-网络IO模型linux网络I
+            1.iptables是什么？
+iptables是开源的基于数据包过滤的防火墙工具。
+
+2.iptables企业应用场景
+1、主机防火墙（filter表的INPUT链）。2、局域网共享上网(nat表的POSTROUTING链)。半个路由器，N
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/">
+          <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/" style="background-size: cover; 
+        <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/741.jpg" alt="">
         </a>
       </div>
     </article>
@@ -831,17 +727,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-04-24</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/04/24/IELTS%E5%86%99%E4%BD%9C%E7%AC%94%E8%AE%B0-1/">IELTS写作笔记-1</a>
+            <a class="post-title-link" href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/">基于真实场景解读K8S_Pod的各种异常</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IELTS/" rel="tag">IELTS</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -856,27 +752,25 @@
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/04/24/IELTS%E5%86%99%E4%BD%9C%E7%AC%94%E8%AE%B0-1/" style="background-size: cover; 
+            <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/129.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/129.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/596.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            得分点1：清晰的文章分段辩论文体立场不重要，选正反都可以，但是别中立。
-例
-Scientists believe computers will become more intelligent than human beings. Some 
+            在 K8s 中，Pod 作为工作负载的运行载体，是最为核心的一个资源对象。Pod 具有复杂的生命周期，在其生命周期的每一个阶段，可能发生多种不同的异常情况。K8s 作为一个复杂系统，异常诊断往往要求强大的知识和经验储备。结合实战经历以及 E
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/04/24/IELTS%E5%86%99%E4%BD%9C%E7%AC%94%E8%AE%B0-1/">
+          <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/04/24/IELTS%E5%86%99%E4%BD%9C%E7%AC%94%E8%AE%B0-1/" style="background-size: cover; 
+        <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/129.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/129.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/596.jpg" alt="">
         </a>
       </div>
     </article>
@@ -887,17 +781,17 @@ Scientists believe computers will become more intelligent than human beings. Som
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-04-21</span>
+            <span class="post-time">2023-01-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/">IELTS听力笔记-1</a>
+            <a class="post-title-link" href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/">理解K8S的设计精髓之List-Watch机制和Informer模块</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IELTS/" rel="tag">IELTS</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -912,25 +806,26 @@ Scientists believe computers will become more intelligent than human beings. Som
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/" style="background-size: cover; 
+            <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/27.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            题源来自于2003-2019年旧题目配合用书：https://zh.book4you.org/book/16739252/bae745语料库重点章节：11章+5章+3章+4章雅思因疫情原因一直没有出新题没有必要看bbc总分分数对应：听力分数
+            1. 前言最近想深入了解一下K8S的内部通信机制，因此读了几遍K8S的源码，感慨很深。至今清楚的记得，当了解到K8S组件之间仅采用HTTP 协议通信，没有依赖中间件时，我非常好奇它是如何做到的。
+在K8S内部通信中，肯定要保证消息的实时性。
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/">
+          <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/" style="background-size: cover; 
+        <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/27.jpg" alt="">
         </a>
       </div>
     </article>
@@ -941,17 +836,17 @@ Scientists believe computers will become more intelligent than human beings. Som
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-04-14</span>
+            <span class="post-time">2023-01-02</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/">《Git解密》笔记——认识Git对象</a>
+            <a class="post-title-link" href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/">lxcfs让pod正确的意识到给自己分配的资源</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -966,25 +861,27 @@ Scientists believe computers will become more intelligent than human beings. Som
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/" style="background-size: cover; 
+            <a href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/108.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/108.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/552.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            认识Git对象在Git的世界里，Git把它所管理的一切内容都当作了一个个的Git对象（Git object），这些对象就被保存在.git目录下。Git在保存这些对象时，还会为它们生成一个基于SHA-1算法的全局唯一的hash值，以便后面利用
+            背景
+在使用docker的时候，我们为了限制某个容器使用的资源，常常使用cgroup的资源限制来限制容器最大能使用的CPU和内存资源等。
+但是对于一些app，它往往会自动检测当前环境的最大资源数量，然后根据这个数据来合理分配资源。问题就出在
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/">
+          <a href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/" style="background-size: cover; 
+        <a href="/2023/01/02/lxcfs%E8%AE%A9pod%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%84%8F%E8%AF%86%E5%88%B0%E7%BB%99%E8%87%AA%E5%B7%B1%E5%88%86%E9%85%8D%E7%9A%84%E8%B5%84%E6%BA%90/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/108.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/108.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/552.jpg" alt="">
         </a>
       </div>
     </article>
@@ -995,17 +892,17 @@ Scientists believe computers will become more intelligent than human beings. Som
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-03-21</span>
+            <span class="post-time">2022-11-22</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/03/21/Docker%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/">Docker核心技术</a>
+            <a class="post-title-link" href="/2022/11/22/Kubernetes%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E4%B9%8BFlannel%E7%9A%84%E8%99%9A%E6%8B%9F%E7%BD%91%E6%A1%A5%E6%A8%A1%E5%BC%8F/">Kubernetes网络原理之Flannel的虚拟网桥模式</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/" rel="tag">docker</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1020,29 +917,26 @@ Scientists believe computers will become more intelligent than human beings. Som
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/03/21/Docker%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" style="background-size: cover; 
+            <a href="/2022/11/22/Kubernetes%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E4%B9%8BFlannel%E7%9A%84%E8%99%9A%E6%8B%9F%E7%BD%91%E6%A1%A5%E6%A8%A1%E5%BC%8F/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/53.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/53.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/663.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            传统分层架构vs微服务传统分册：项目太大了难以维护微服务：服务和服务之间走轻量级的协议比如rest，容易维护，每个部分负责其中一部分服务。
-微服务改造
-微服务间通讯点对点API网关
-Docker简介 
-为什么用Docker虚拟化要虚拟一个完
+            FlannelUDP模式用veth-pair设备连接pod和CNI0网桥，，从容器的网络空间进入内核网络空间，再由内核网络空间发给flanneld处理（用户空间），最后再封装成udp数据包向节点外发出，性能不好。
+VxLAN模式相比udp模
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/03/21/Docker%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/">
+          <a href="/2022/11/22/Kubernetes%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E4%B9%8BFlannel%E7%9A%84%E8%99%9A%E6%8B%9F%E7%BD%91%E6%A1%A5%E6%A8%A1%E5%BC%8F/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/03/21/Docker%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/" style="background-size: cover; 
+        <a href="/2022/11/22/Kubernetes%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E4%B9%8BFlannel%E7%9A%84%E8%99%9A%E6%8B%9F%E7%BD%91%E6%A1%A5%E6%A8%A1%E5%BC%8F/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/53.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/53.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/663.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1053,17 +947,17 @@ Docker简介
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-03-12</span>
+            <span class="post-time">2022-10-25</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/03/12/Golang%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/">Golang简易教程</a>
+            <a class="post-title-link" href="/2022/10/25/Dubbo%E5%9C%A8_k8s%E4%B8%8B%E7%9A%84%E6%80%9D%E8%80%83/">Dubbo在_k8s下的思考</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1078,47 +972,25 @@ Docker简介
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/03/12/Golang%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" style="background-size: cover; 
+            <a href="/2022/10/25/Dubbo%E5%9C%A8_k8s%E4%B8%8B%E7%9A%84%E6%80%9D%E8%80%83/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/47.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/47.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/603.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            为什么需要go
-编译高效
-
-支持高并发
-
-面向垃圾回收
-删繁就简
-不支持函数重载
-
-不支持隐式转换
-
-不支持继承
-
-不支持动态链接库
-
-不支持动态加载代码
-
-通过recover和panic替代异常机制
-
-不支持断言
-
-不支持静态变量
-go语
+            序言Dubbo在2011开源之后，一直是国内最受欢迎的RPC框架，之后spring boot和Spring Cloud的面世，助推了微服务的火热程度。计算机的世界变化很快，自从容器和K8s登上舞台之后，给原有的RPC领域带来了很大的挑战。这
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/03/12/Golang%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/">
+          <a href="/2022/10/25/Dubbo%E5%9C%A8_k8s%E4%B8%8B%E7%9A%84%E6%80%9D%E8%80%83/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/03/12/Golang%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" style="background-size: cover; 
+        <a href="/2022/10/25/Dubbo%E5%9C%A8_k8s%E4%B8%8B%E7%9A%84%E6%80%9D%E8%80%83/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/47.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/47.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/603.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1129,17 +1001,17 @@ go语
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-02-22</span>
+            <span class="post-time">2022-10-24</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/02/22/Linux%E5%AE%9E%E6%88%98100%E8%AE%B2/">Linux实战100讲</a>
+            <a class="post-title-link" href="/2022/10/24/GitOps%E6%98%AF%E4%BB%80%E4%B9%88/">GitOps是什么</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitOps/" rel="tag">GitOps</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1154,29 +1026,25 @@ go语
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/02/22/Linux%E5%AE%9E%E6%88%98100%E8%AE%B2/" style="background-size: cover; 
+            <a href="/2022/10/24/GitOps%E6%98%AF%E4%BB%80%E4%B9%88/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/17.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/17.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/768.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            帮助命令123man -a ls  #查找所有章节help cdls --help
-按q退出​
-​
-一些皆文件显示当前的目录名称1pwd
-更改当前的操作目录123cd /path/to/....绝对路径 cd ./path/to/...相对
+            GitOps正如 GitOps 的名字所暗示的那样，我们希望通过 Git 来管理我们的操作，例如应用程序部署、管理、扩展等。我们可以提交到 Git 并且我们的应用程序/基础设施得到安装、更新等。有很多工具支持这些，比如ArgoCD、Flux
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/02/22/Linux%E5%AE%9E%E6%88%98100%E8%AE%B2/">
+          <a href="/2022/10/24/GitOps%E6%98%AF%E4%BB%80%E4%B9%88/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/02/22/Linux%E5%AE%9E%E6%88%98100%E8%AE%B2/" style="background-size: cover; 
+        <a href="/2022/10/24/GitOps%E6%98%AF%E4%BB%80%E4%B9%88/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/17.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/17.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/768.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1187,17 +1055,17 @@ go语
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-02-16</span>
+            <span class="post-time">2022-10-04</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/02/16/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/">整体架构</a>
+            <a class="post-title-link" href="/2022/10/04/%E4%BB%80%E4%B9%88%E6%98%AF_Informer%E6%9C%BA%E5%88%B6/">什么是_Informer机制</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spark/" rel="tag">spark</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1212,31 +1080,25 @@ go语
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/02/16/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/" style="background-size: cover; 
+            <a href="/2022/10/04/%E4%BB%80%E4%B9%88%E6%98%AF_Informer%E6%9C%BA%E5%88%B6/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/86.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            首先了解一下大数据处理框架的四层结构注意：上图体现了rdd和task的关系
-
-上图所示，即大数据处理框架四层结构，下面将逐一介绍
-
-用户层
-这一层主要是准备输入数据、Spark或Hadoop的用户代码、配置参数
-输入数据：一般以分块形式存在
+            kubernetes中的informer机制可能是实现集群控制模块的最核心的设计之一了，所谓 Informer，其实就是一个带有本地缓存和索引机制的、可以注册 EventHandler 的 client，本地缓存被称为 Store，索引被称
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/02/16/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/">
+          <a href="/2022/10/04/%E4%BB%80%E4%B9%88%E6%98%AF_Informer%E6%9C%BA%E5%88%B6/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/02/16/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/" style="background-size: cover; 
+        <a href="/2022/10/04/%E4%BB%80%E4%B9%88%E6%98%AF_Informer%E6%9C%BA%E5%88%B6/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/86.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1247,17 +1109,17 @@ go语
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-02-16</span>
+            <span class="post-time">2022-10-04</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/02/16/%E9%85%8D%E7%BD%AEspark%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">配置spark开发环境</a>
+            <a class="post-title-link" href="/2022/10/04/%E4%BB%8EPause%E5%AE%B9%E5%99%A8%E7%90%86%E8%A7%A3Pod%E7%9A%84%E6%9C%AC%E8%B4%A8/">从Pause容器理解Pod的本质</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spark/" rel="tag">spark</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k8s/" rel="tag">k8s</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1272,30 +1134,27 @@ go语
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/02/16/%E9%85%8D%E7%BD%AEspark%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" style="background-size: cover; 
+            <a href="/2022/10/04/%E4%BB%8EPause%E5%AE%B9%E5%99%A8%E7%90%86%E8%A7%A3Pod%E7%9A%84%E6%9C%AC%E8%B4%A8/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/127.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/127.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/681.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            如何在IDEA中配置Spark开发环境？
-首先自行下载scala，并在IDEA中加入scala的SDK，因为spark2.4.3依赖scala2.11，故这里下载scala2.11.11
-
-[
-
-并在pom.xml中添加spark2.4.3
+            1. Pod 与 容器的关系都说 K8S 是容器编排引擎，那怎么 K8S 中最小的可管理可部署的计算单元是 Pod 而不是容器呢？
+Pod 和 容器，又是什么关系呢？
+其实 Pod 只是一个抽象的逻辑概念，它是一组（一个或者多个）容器的集合
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/02/16/%E9%85%8D%E7%BD%AEspark%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">
+          <a href="/2022/10/04/%E4%BB%8EPause%E5%AE%B9%E5%99%A8%E7%90%86%E8%A7%A3Pod%E7%9A%84%E6%9C%AC%E8%B4%A8/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/02/16/%E9%85%8D%E7%BD%AEspark%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" style="background-size: cover; 
+        <a href="/2022/10/04/%E4%BB%8EPause%E5%AE%B9%E5%99%A8%E7%90%86%E8%A7%A3Pod%E7%9A%84%E6%9C%AC%E8%B4%A8/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/127.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/127.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/681.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1305,12 +1164,12 @@ go语
 <div class="w-70">
   
   <!-- <nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/2/">2</a><a class="extend next" rel="next" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/2/">Next</a>
+    <span class="page-number current">1</span><a class="page-number" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/2/">2</a><a class="page-number" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/3/">3</a><a class="page-number" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/4/">4</a><a class="extend next" rel="next" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/2/">Next</a>
   </nav> -->
   <div class="page-nav">
     
     <div class="page-info">
-        <div class="page-info-text">1 / 2</div>
+        <div class="page-info-text">1 / 4</div>
     </div>
     
       <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/page/2/"
@@ -1328,7 +1187,8 @@ go语
     <!-- 页脚 -->
     
   
-  <!-- 底部鱼儿跳动效果，依赖于jquery-->
+  
+    <!-- 底部鱼儿跳动效果，依赖于jquery-->
 <div id="j-fish-skip" style=" position: relative;height: 153px;width: auto;"></div>
 <script>
   var RENDERER = {
@@ -1485,6 +1345,7 @@ go语
     })
   });
 </script>
+  
   <div class="footer bg-color">
     <div class="footer-main">
       
@@ -1496,7 +1357,7 @@ go语
       
         
           <div class="footer-copyright">
-            <p>Copyright © 2020 - 2022 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra" style="display: inline-block;  vertical-align: middle;"><img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" align="absmiddle" width="59px" height="30px" /></a></p>
+            <p>Copyright © 2020 - 2023 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">鲁ICP备2022021620号-1</a> </p>
 
           </div>
         
@@ -1507,6 +1368,8 @@ go语
       
         
           <div class="footer-custom">
+            
+              <div><div style="width:300px;margin:0 auto; padding:20px 0;"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37140202001145" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://snowgo.top/medias/1.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37140202001145号</p></a></div></div>
             
           </div>
         
@@ -1578,12 +1441,16 @@ go语
 <style>
 .aplayer .aplayer-lrc p {
   
+  display: none;
+  
   font-size: 12px;
   font-weight: 700;
   line-height: 16px !important;
 }
 
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
   
   font-size: 15px;
   color: #010202;
@@ -1604,7 +1471,7 @@ go语
   class=""
   server="netease"
   type="playlist"
-  id="2303619958"
+  id="7133935892"
   fixed='true'
   autoplay='false'
   theme='#010202'
@@ -2032,13 +1899,14 @@ go语
 
 <div class="pjax-animate">
   
-    <div class="loading-circle"><div id="loader-circle"></div></div>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
     <script>
       window.ShowLoading = function() {
-        $(".loading-circle").css("display", "block");
+        NProgress.start();
       };
       window.HideLoading = function() {
-        $(".loading-circle").css("display", "none");
+        NProgress.done();
       }
     </script>
   

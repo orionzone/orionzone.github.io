@@ -19,21 +19,6 @@
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
-    <script>
-        var themeModelId = '';
-        if (themeModelId) {
-            localStorage.setItem('modelId', themeModelId);
-        }
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
-    <script>
-        var live2dOpen = eval('true') || false;
-        if (!live2dOpen) {
-            localStorage.setItem('waifu-display', 1609323474481);
-        }
-    </script>
-  
   
   
 <link rel="stylesheet" href="/css/animate.min.css">
@@ -63,7 +48,7 @@
     <!-- import link -->
     
         
-            
+            <link href="/custom/index.css" rel="stylesheet">
         
             
         
@@ -96,30 +81,6 @@
   <body>
     <!-- 预加载动画 -->
     <!-- 页面预加载动画 -->
-
-<div id='loader'>
-  <link rel="stylesheet" href="/js/loaded/index.css" >
-  <div class="loading-left-bg"></div>
-  <div class="loading-right-bg"></div>
-  <div class="spinner-box">
-    <div class="configure-border-1">
-      <div class="configure-core"></div>
-    </div>
-    <div class="configure-border-2">
-      <div class="configure-core"></div>
-    </div>
-    <div class="loading-word">loading...</div>
-  </div>
-</div>
-
-<script>
-  var endLoading = function () {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loader').classList.add("loading");
-  }
-  window.addEventListener('DOMContentLoaded',endLoading);
-  
-</script>
 
     
     <!-- 判断是否为暗黑风格 -->
@@ -225,7 +186,7 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+      <img class="drawer-box-head_logo" src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
       <h3 class="drawer-box-head_title">snowgo</h3>
       <h5 class="drawer-box-head_desc"></h5>
     </div>
@@ -302,47 +263,12 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/bangumis" class="drawer-menu-item-link">
+                <a href="/chatgpt" class="drawer-menu-item-link">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
-                  <span>
-                    
-                      <i class="fas fa-link"></i>
-                    
-                    <span class="name">更多</span>
-                  </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
-                </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(7)">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -409,7 +335,7 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+          <img src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
         </div>
       
       <a href="/" class="logo">snowgo</a>
@@ -486,45 +412,12 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/bangumis" class="menu-item-link" title="追番">
+                <a href="/chatgpt" class="menu-item-link" title="ChatGPT">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="javascript:;" class="menu-item-link" title="更多">
-                  
-                    <i class="fas fa-link"></i>
-                  
-                  <span class="name">更多</span>
-                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
-                </a>
-                <ul class="sub-menu">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -653,502 +546,39 @@
 
 
 
-<div class="swiper-length" style="display: none;">3</div>
+<div class="swiper-length" style="display: none;">0</div>
 <div id="appSwiper"
-  class=""
+  class="swiper-no-swiping"
   @mouseenter="stopAutoPlay()" 
   @mouseleave="startAutoPlay()"
 >
   <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     
-      
-        <swiper-slide>
-          <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B81.png" style="background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-            <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag">
-                
-                <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B81.png" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+      <swiper-slide>
+        <div class="item swiper-lazy" data-background="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg" style="background-size: 300000px; 
+          background-position: left center;" style="position: relative;">
+          <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+            <div class="flag">
+              
+              <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/air%E5%A3%81%E7%BA%B83.jpg" style="height: 100%; background-size: cover; 
+                background-position: center center;">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+              </div>
+              <div class="flag-text">
+                <div class="flag-text-content">
+                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">snowgo</div>
+                  
+                      <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"></div>
+                    
                 </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">消える飛行機雲</div>
-                    
-                      <div  class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                        <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="50">
-                          <h1 class="typing"></h1>
-                        </vue-typed-js>
-                      </div>
-                      
-                  </div>
-                  <div style="display: flex;" class="flag-text-btns">
-                    
-                    
-                  </div>
+                <div style="display: flex;" class="flag-text-btns">
+                  
+                  
                 </div>
               </div>
+            </div>
           </div>
-        </swiper-slide>
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/52.jpg" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/">
-                        linux之io多路复用与epoll
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">IO 多路复用概述I/O 多路复用技术是为了解决进程或线程阻塞到某个 I/O 系统调用而出现的技术，使进程不阻塞于某个特定的 I/O 系统调用。在IO多路复用技术描述前，先讲解下同步，异步，阻塞，非阻塞的概念。
-网络IO模型linux网络I</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/2022/05/09/linux%E4%B9%8Bio%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E4%B8%8Eepoll/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">Read More</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/otherpic/905289.png" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/2021/07/28/fastai%E6%95%99%E7%A8%8B/">
-                        fastai教程
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">快速预览应用123456##默认是抓取图像中心进行裁剪item tfms=Resize(128)##改为将图像进行拉伸Resize(128, ResizeMethod.Squish)##改为将不足的区域进行填充（这里zero可以改成refl</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/2021/07/28/fastai%E6%95%99%E7%A8%8B/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">Read More</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/14.jpg" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/14.jpg" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%20/">
-                        Bilibili直播姬命令行版使用指南
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-下载与安装https://rec.danmuji.org/docs/cli/选择对应的版本后解压，打开终端，cd到解压后的文件夹
-录制直接输入./BililiveRecorder.Cli portable “存储视频的路径” 房间号即可开</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/2020/06/13/Bilibili%E5%BD%95%E6%92%AD%E5%A7%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%20/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">Read More</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-    <div class="swiper-pagination" slot="pagination" pointer style="display: none;"></div>
-    <div class="swiper-button-prev swiper-button-white" pointer slot="button-prev" style=""></div>
-    <div class="swiper-button-next swiper-button-white" pointer slot="button-next" style=""></div>
+      </swiper-slide>
     
   </swiper>
   
@@ -1159,23 +589,9 @@
     </div>
   
   <canvas id="header_canvas"style="position:absolute;bottom:0;width:100%;pointer-events:none;"></canvas>
-  
-    <svg class="hans-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none"><defs><path id="hans-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="hans-parallax"><use xlink:href="#hans-wave" x="50" y="0" fill="rgba(224,233,239,.5)"></use><use xlink:href="#hans-wave" x="50" y="3" fill="rgba(224,233,239,.5)"></use><use xlink:href="#hans-wave" x="50" y="6" fill="rgba(224,233,239,.5)"></use></g></svg>
     
 </div>
 
-
-<style>.hans-parallax>use{animation:hans-wave-move 12s linear infinite}.hans-parallax>use:nth-child(1){animation-delay:-2s}.hans-parallax>use:nth-child(2){animation-delay:-2s;animation-duration:5s}.hans-parallax>use:nth-child(3){animation-delay:-4s;animation-duration:3s}@keyframes hans-wave-move{0%{transform:translate(-90px,0)}100%{transform:translate(85px,0)}}</style>
-<style>
-  .hans-container {
-    position: absolute!important;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 100;
-    pointer-events:none;
-  }
-</style>
 
 
 <script>
@@ -1184,7 +600,7 @@
   var loop = JSON.parse('true') ? false : JSON.parse('true');
   var effect = 'slide';
   var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
-  var defaultDesc = '追いかけて追いかけて,願いだけ秘めて見つめてる';
+  var defaultDesc = '';
   defaultDesc = defaultDesc.split(',');
   var defaultDescTypedLoop = JSON.parse('true');
   var vm = new Vue({
@@ -1738,11 +1154,11 @@
     <div class="widget my_github_container" id="my_github_container" style="order: -1;background: #fff">
       <header>
         
-          <a style="color: blue" target="_blank" rel="noopener" href='https://github.com/snowgo/'><i class="fas fa-envelope fa-fw" aria-hidden="true"></i><span class='name'>测试日历</span></a>
+          <a style="color: #006600" target="_blank" rel="noopener" href='https://github.com/snowgo'><i class="fa-solid fa-calendar-days fa-fw" aria-hidden="true"></i><span class='name'>Github日历</span></a>
         
       </header>
       <div class="content">
-         <div id="github_container"></div> <script data-pjax src="/githubcalendar/index.js"></script> 
+         <img no-lazy width="100%" hright="300px" src="https://ghchart.rshah.org/006600/snowgo" alt="snowgo github" /> 
       </div>
   </div>
   
@@ -1768,17 +1184,17 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-26</span>
+            <span class="post-time">2022-04-24</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2021/07/26/git_%E5%9B%9E%E6%BB%9A/">git_回滚</a>
+            <a class="post-title-link" href="/2022/04/24/go%E8%AF%AD%E8%A8%80slice%E4%BC%98%E5%8C%96/">go语言slice优化</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/" rel="tag">tools</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1786,39 +1202,34 @@
 
 <div class="article-category">
   <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/TOOLS/">TOOLS</a>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
 </div>
 
 
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2021/07/26/git_%E5%9B%9E%E6%BB%9A/" style="background-size: cover; 
+            <a href="/2022/04/24/go%E8%AF%AD%E8%A8%80slice%E4%BC%98%E5%8C%96/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://images7.alphacoders.com/726/726287.jpg" class="lazyload placeholder" data-srcset="https://images7.alphacoders.com/726/726287.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/206.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            进入本地项目文件夹
-
-git init
-git log
-ctrl+z退出
-git reset –hard 3bfd4447d2333d6cc12ea22cb89265784a9c8954
-git push -f origin master
+            对以下代码进行优化
+答案首先既然已经知道有多少个元素了那初始化的时候就把cap给出进一步优化：直接分配一块连续的内存，而不是初始化指针，毕竟它指向的都是相邻的内存位置，性能会好一些
 
           </div>
         </div>
         <div class="post-more">
-          <a href="/2021/07/26/git_%E5%9B%9E%E6%BB%9A/">
+          <a href="/2022/04/24/go%E8%AF%AD%E8%A8%80slice%E4%BC%98%E5%8C%96/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2021/07/26/git_%E5%9B%9E%E6%BB%9A/" style="background-size: cover; 
+        <a href="/2022/04/24/go%E8%AF%AD%E8%A8%80slice%E4%BC%98%E5%8C%96/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://images7.alphacoders.com/726/726287.jpg" class="lazyload placeholder" data-srcset="https://images7.alphacoders.com/726/726287.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/206.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1829,458 +1240,10 @@ git push -f origin master
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-23</span>
+            <span class="post-time">2022-04-24</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2021/07/23/%E8%AF%AD%E9%9B%80markdown%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E8%BD%AC%E6%8D%A2_for_hexo/">语雀markdown图片路径转换_for_hexo</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/" rel="tag">tools</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/TOOLS/">TOOLS</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/23/%E8%AF%AD%E9%9B%80markdown%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E8%BD%AC%E6%8D%A2_for_hexo/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://z3.ax1x.com/2021/07/23/Wy0DYT.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/07/23/Wy0DYT.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-              大家好，我是go有鸡！在使用语雀写博客的时候，导出的md文件里的图片路径往往不能在hexo博客中正常直接展示，需要逐个替换成本地路径才可以显示，这太麻烦了！  依噶，用这个脚本，只要简简单单的两步配置，就能将图片路径自动转换成本地图片路
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/23/%E8%AF%AD%E9%9B%80markdown%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E8%BD%AC%E6%8D%A2_for_hexo/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/23/%E8%AF%AD%E9%9B%80markdown%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E8%BD%AC%E6%8D%A2_for_hexo/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://z3.ax1x.com/2021/07/23/Wy0DYT.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/07/23/Wy0DYT.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-11</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/07/11/%E6%9C%80%E5%A5%BD%E7%9A%84BERT%E6%95%99%E7%A8%8B/">最好的BERT教程</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dl/" rel="tag">dl</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/DL/">DL</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/11/%E6%9C%80%E5%A5%BD%E7%9A%84BERT%E6%95%99%E7%A8%8B/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://z3.ax1x.com/2021/07/21/WwkjE9.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/07/21/WwkjE9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            https://leemeng.tw/attack_on_bert_transfer_learning_in_nlp.html#
-
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/11/%E6%9C%80%E5%A5%BD%E7%9A%84BERT%E6%95%99%E7%A8%8B/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/11/%E6%9C%80%E5%A5%BD%E7%9A%84BERT%E6%95%99%E7%A8%8B/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://z3.ax1x.com/2021/07/21/WwkjE9.jpg" class="lazyload placeholder" data-srcset="https://z3.ax1x.com/2021/07/21/WwkjE9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-11</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/07/11/%E9%AA%8C%E8%AF%81%E9%9B%86%E5%8F%82%E4%B8%8E%E8%AE%AD%E7%BB%83%E4%BA%86%E5%90%97%EF%BC%9F/">验证集参与训练了吗</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dl/" rel="tag">dl</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/DL/">DL</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/11/%E9%AA%8C%E8%AF%81%E9%9B%86%E5%8F%82%E4%B8%8E%E8%AE%AD%E7%BB%83%E4%BA%86%E5%90%97%EF%BC%9F/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://img13.360buyimg.com/ddimg/jfs/t1/187152/11/7561/2372205/60c7fac2E32b9bab3/4b3a2fd948eefa35.jpg" class="lazyload placeholder" data-srcset="https://img13.360buyimg.com/ddimg/jfs/t1/187152/11/7561/2372205/60c7fac2E32b9bab3/4b3a2fd948eefa35.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            从《机器学习》这本书中，我们知道，训练集是拿来训练模型参数的，对于所有的训练集，训练一个epoch之后，我们会用验证集来测试一下模型在上面的性能，由于训练集和验证集的不可交性，所以在验证集上面的结果是有参考意义的。但是重点是：
-
-验证集并没
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/11/%E9%AA%8C%E8%AF%81%E9%9B%86%E5%8F%82%E4%B8%8E%E8%AE%AD%E7%BB%83%E4%BA%86%E5%90%97%EF%BC%9F/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/11/%E9%AA%8C%E8%AF%81%E9%9B%86%E5%8F%82%E4%B8%8E%E8%AE%AD%E7%BB%83%E4%BA%86%E5%90%97%EF%BC%9F/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://img13.360buyimg.com/ddimg/jfs/t1/187152/11/7561/2372205/60c7fac2E32b9bab3/4b3a2fd948eefa35.jpg" class="lazyload placeholder" data-srcset="https://img13.360buyimg.com/ddimg/jfs/t1/187152/11/7561/2372205/60c7fac2E32b9bab3/4b3a2fd948eefa35.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-08</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/07/08/%E3%80%90%E8%B0%83%E4%BC%98%E6%96%B9%E6%B3%95%E3%80%91%E2%80%94%E2%80%94warmup/">【调优方法】——warmup</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dl/" rel="tag">dl</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/DL/">DL</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/08/%E3%80%90%E8%B0%83%E4%BC%98%E6%96%B9%E6%B3%95%E3%80%91%E2%80%94%E2%80%94warmup/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/10.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            
-学习率是模型训练中最重要的超参之一，针对学习率的优化有很多种方法，而warmup是其中重要的一种。
-
-什么是warmupwarmup是一种学习率优化方法（最早出现在ResNet论文中）。在模型训练之初选用较小的学习率，训练一段时间之后（如
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/08/%E3%80%90%E8%B0%83%E4%BC%98%E6%96%B9%E6%B3%95%E3%80%91%E2%80%94%E2%80%94warmup/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/08/%E3%80%90%E8%B0%83%E4%BC%98%E6%96%B9%E6%B3%95%E3%80%91%E2%80%94%E2%80%94warmup/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/10.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-08</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/07/08/%E9%86%8B%E6%BA%9C%E9%A5%B9%E9%A6%87%E5%81%9A%E6%B3%95/">醋溜饹馇做法</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%AD%E5%9B%BD%E6%96%99%E7%90%86/" rel="tag">中国料理</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E6%96%99%E7%90%86/">料理</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/08/%E9%86%8B%E6%BA%9C%E9%A5%B9%E9%A6%87%E5%81%9A%E6%B3%95/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" class="lazyload placeholder" data-srcset="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            ​
-饹馇面粉绿豆粉鸡蛋生菜/蒜黄蒜醋10ml酱油10ml白糖4-5g味精1.5g
-做法制作饹馇平底锅加油，放入面粉绿豆粉鸡蛋*2的混合物​
-剩下的步骤起锅烧油放蒜加生菜进去炒炒加调料（除味精饹馇放进去炒炒关火放味精​
-来，试试看
-
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/08/%E9%86%8B%E6%BA%9C%E9%A5%B9%E9%A6%87%E5%81%9A%E6%B3%95/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/08/%E9%86%8B%E6%BA%9C%E9%A5%B9%E9%A6%87%E5%81%9A%E6%B3%95/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" class="lazyload placeholder" data-srcset="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-06</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/07/06/2021AcWing%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%C2%B7%E6%9A%91%E5%81%87/">2021AcWing每日一题·暑假</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dl/" rel="tag">dl</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tools/" rel="tag">tools</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/DL/">DL</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/06/2021AcWing%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%C2%B7%E6%9A%91%E5%81%87/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            3761. 唯一最小数给定一个长度为 n 的整数数组 a1,a2,…,ana1,a2,…,an。请你找到数组中只出现过一次的数当中最小的那个数。输出找到的数的索引编号。a1 的索引编号为 1，a2 的索引编号为 2，…，an 的索引编号为 
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/06/2021AcWing%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%C2%B7%E6%9A%91%E5%81%87/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/06/2021AcWing%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%C2%B7%E6%9A%91%E5%81%87/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-07-01</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/07/01/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8A/">目标检测（上篇）</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dl/" rel="tag">dl</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/DL/">DL</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/07/01/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8A/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" class="lazyload placeholder" data-srcset="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            
-
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/07/01/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8A/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/07/01/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%B8%8A/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" class="lazyload placeholder" data-srcset="https://img10.360buyimg.com/ddimg/jfs/t1/188094/17/8354/721071/60c7fbfbE76330a2c/6f5f82c9ed377cc6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-06-20</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/06/20/Transfer%20Learning/">从迁移学习到图像合成</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dl/" rel="tag">dl</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/DL/">DL</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/06/20/Transfer%20Learning/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-             
-
-
-
-
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/06/20/Transfer%20Learning/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/06/20/Transfer%20Learning/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-06-19</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/06/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E6%80%8E%E6%A0%B7%E9%80%9A%E4%BF%A1%E7%9A%84/">浏览器是怎样通信的</a>
+            <a class="post-title-link" href="/2022/04/24/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9C%B0%E5%9D%80%E6%A0%8F%E8%BE%93%E5%85%A5URL%E6%95%B2%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/">浏览器地址栏输入URL敲下回车后发生了什么</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
@@ -2295,36 +1258,483 @@ git push -f origin master
 
 <div class="article-category">
   <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E3%80%8A%E7%BD%91%E7%BB%9C%E6%98%AF%E6%80%8E%E6%A0%B7%E8%BF%9E%E6%8E%A5%E7%9A%84%E3%80%8B/">《网络是怎样连接的》</a>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
 </div>
 
 
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2021/06/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E6%80%8E%E6%A0%B7%E9%80%9A%E4%BF%A1%E7%9A%84/" style="background-size: cover; 
+            <a href="/2022/04/24/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9C%B0%E5%9D%80%E6%A0%8F%E8%BE%93%E5%85%A5URL%E6%95%B2%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://img11.360buyimg.com/ddimg/jfs/t1/185346/35/9972/784416/60cd9b90Ec7e637f2/434550c6655c617d.jpg" class="lazyload placeholder" data-srcset="https://img11.360buyimg.com/ddimg/jfs/t1/185346/35/9972/784416/60cd9b90Ec7e637f2/434550c6655c617d.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/106.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            第1步，从在浏览器中输入网址开始：
-首先网址就是URL，通常是访问web服务器，用”http:”，即HTTP协议
-URL的格式会随着协议的不同而不同
-URL的各种格式如下：
-访问Web服务器或FTP服务器时，URL包括域名和文件路径名，有时
+            
+一、简单分析简单的分析，从输入 URL到回车后发生的行为如下：
+
+URL解析
+DNS 查询
+TCP 连接
+HTTP 请求
+响应请求
+页面渲染二、详细分析URL解析首先判断你输入的是一个合法的URL 还是一个待搜索的关键词，并且根据你输入的
           </div>
         </div>
         <div class="post-more">
-          <a href="/2021/06/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E6%80%8E%E6%A0%B7%E9%80%9A%E4%BF%A1%E7%9A%84/">
+          <a href="/2022/04/24/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9C%B0%E5%9D%80%E6%A0%8F%E8%BE%93%E5%85%A5URL%E6%95%B2%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2021/06/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E6%80%8E%E6%A0%B7%E9%80%9A%E4%BF%A1%E7%9A%84/" style="background-size: cover; 
+        <a href="/2022/04/24/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9C%B0%E5%9D%80%E6%A0%8F%E8%BE%93%E5%85%A5URL%E6%95%B2%E4%B8%8B%E5%9B%9E%E8%BD%A6%E5%90%8E%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://img11.360buyimg.com/ddimg/jfs/t1/185346/35/9972/784416/60cd9b90Ec7e637f2/434550c6655c617d.jpg" class="lazyload placeholder" data-srcset="https://img11.360buyimg.com/ddimg/jfs/t1/185346/35/9972/784416/60cd9b90Ec7e637f2/434550c6655c617d.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/106.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-24</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/24/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/">进程间通信方式</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag">操作系统</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/24/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/91.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            同一个进程中的线程共享数据空间可以直接通信，但是进程间是无法直接进行通信的。进程间通信：
+
+管道模型：比如cat xx.txt | grep -n ‘xxx’ 这个’|’可以看作一个单向的匿名管道，使得前后两个进程之间进行通信，前一个命名的
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/24/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/24/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/91.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-21</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/">IELTS听力笔记-1</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IELTS/" rel="tag">IELTS</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            题源来自于2003-2019年旧题目配合用书：https://zh.book4you.org/book/16739252/bae745语料库重点章节：11章+5章+3章+4章雅思因疫情原因一直没有出新题没有必要看bbc总分分数对应：听力分数
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/21/IELTS%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0-1/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-20</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/20/go%E8%AF%AD%E8%A8%80slice%E6%89%A9%E5%AE%B9%E4%BE%8B%E9%A2%98/">go语言slice扩容例题</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/20/go%E8%AF%AD%E8%A8%80slice%E6%89%A9%E5%AE%B9%E4%BE%8B%E9%A2%98/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/100.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            下面代码输出什么
+
+答案因为x的cap为3，y和x指向同一个底层数组，所以y的容量也为3，对y继续append之后y发生扩容了，于是指向的底层数组就和x不一样了。
+
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/20/go%E8%AF%AD%E8%A8%80slice%E6%89%A9%E5%AE%B9%E4%BE%8B%E9%A2%98/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/20/go%E8%AF%AD%E8%A8%80slice%E6%89%A9%E5%AE%B9%E4%BE%8B%E9%A2%98/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/100.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-14</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/14/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%AC%AC%E4%BA%8C%E5%88%97%E6%98%AF%E5%90%A6%E6%9C%89%E9%87%8D%E5%A4%8D/">shell系列题之第二列是否有重复</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/14/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%AC%AC%E4%BA%8C%E5%88%97%E6%98%AF%E5%90%A6%E6%9C%89%E9%87%8D%E5%A4%8D/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/48.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            描述给定一个 nowcoder.txt文件，其中有3列信息，如下实例，编写一个shell脚本来检查文件第二列是否有重复，且有几个重复，并提取出重复的行的第二列信息：实例：
+1234567891020201001 python 9920201
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/14/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%AC%AC%E4%BA%8C%E5%88%97%E6%98%AF%E5%90%A6%E6%9C%89%E9%87%8D%E5%A4%8D/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/14/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%AC%AC%E4%BA%8C%E5%88%97%E6%98%AF%E5%90%A6%E6%9C%89%E9%87%8D%E5%A4%8D/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/48.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-14</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/">《Git解密》笔记——认识Git对象</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/108.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            认识Git对象在Git的世界里，Git把它所管理的一切内容都当作了一个个的Git对象（Git object），这些对象就被保存在.git目录下。Git在保存这些对象时，还会为它们生成一个基于SHA-1算法的全局唯一的hash值，以便后面利用
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/14/%E3%80%8AGit%E8%A7%A3%E5%AF%86%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%AE%A4%E8%AF%86Git%E5%AF%B9%E8%B1%A1/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/108.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-11</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A8%E5%86%85%E5%AD%98%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%92%8C/">shell系列题之统计所有进程占用内存大小的和</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A8%E5%86%85%E5%AD%98%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%92%8C/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/65.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            描述假设 nowcoder.txt 内容如下：
+12345root         2  0.0  0.0      0     0 ?        S    9月25   0:00 [kthreadd]root         4  0
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A8%E5%86%85%E5%AD%98%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%92%8C/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A8%E5%86%85%E5%AD%98%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%92%8C/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/65.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-11</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%AF%8F%E4%B8%AA%E5%8D%95%E8%AF%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%AA%E6%95%B0/">shell系列题之统计每个单词出现的个数</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%AF%8F%E4%B8%AA%E5%8D%95%E8%AF%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%AA%E6%95%B0/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/213.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            描述写一个 bash脚本以统计一个文本文件 nowcoder.txt 中每个单词出现的个数。
+为了简单起见，你可以假设：nowcoder.txt只包括小写字母和空格。每个单词只由小写字母组成。单词间由一个或多个空格字符分隔。
+示例:假设 n
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%AF%8F%E4%B8%AA%E5%8D%95%E8%AF%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%AA%E6%95%B0/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/11/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E7%BB%9F%E8%AE%A1%E6%AF%8F%E4%B8%AA%E5%8D%95%E8%AF%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%AA%E6%95%B0/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/213.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-04-09</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/04/09/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E6%89%93%E5%8D%B0%E5%AD%97%E6%AF%8D%E6%95%B0%E5%B0%8F%E4%BA%8E8%E7%9A%84%E5%8D%95%E8%AF%8D/">shell系列题之打印字母数小于8的单词</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/04/09/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E6%89%93%E5%8D%B0%E5%AD%97%E6%AF%8D%E6%95%B0%E5%B0%8F%E4%BA%8E8%E7%9A%84%E5%8D%95%E8%AF%8D/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/63.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            描述写一个 bash脚本以统计一个文本文件 nowcoder.txt中字母数小于8的单词。
+示例:假设 nowcoder.txt 内容如下：how they are implemented and applied in computer 
+
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/04/09/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E6%89%93%E5%8D%B0%E5%AD%97%E6%AF%8D%E6%95%B0%E5%B0%8F%E4%BA%8E8%E7%9A%84%E5%8D%95%E8%AF%8D/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/04/09/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E6%89%93%E5%8D%B0%E5%AD%97%E6%AF%8D%E6%95%B0%E5%B0%8F%E4%BA%8E8%E7%9A%84%E5%8D%95%E8%AF%8D/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/63.jpg" alt="">
         </a>
       </div>
     </article>
@@ -2333,7 +1743,7 @@ URL的各种格式如下：
     <!-- 翻页 -->
     
   <!-- <nav class="page-nav">
-    <a class="extend prev" rel="prev" href="/page/9/">Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/11/">Next</a>
+    <a class="extend prev" rel="prev" href="/page/9/">Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/11/">Next</a>
   </nav> -->
   <div class="page-nav">
     
@@ -2343,7 +1753,7 @@ URL的各种格式如下：
       </a>
     
     <div class="page-info">
-        <div class="page-info-text">10 / 13</div>
+        <div class="page-info-text">10 / 18</div>
     </div>
     
       <a href="/page/11/"
@@ -2365,7 +1775,7 @@ URL的各种格式如下：
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img src='https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/nightanime.jpg'/>
+          <img src='https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/nightanime.jpg'/>
         </a>
       
     
@@ -2375,32 +1785,11 @@ URL的各种格式如下：
           <h2>❄️snowgo❄️</h2>
         
         
-          <p>どうぞ</p>
-
-        
         
       </div>
     
     
       <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/2145083610@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
         
           
             <a href="https://github.com/snowgo/"
@@ -2451,17 +1840,12 @@ URL的各种格式如下：
             <li><a class="flat-box"
               title="/categories/BIGDATA/" href="/categories/BIGDATA/"
               id="categoriesBIGDATA"
-              ><div class='name'>BIGDATA</div><div class='badge'>(1)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/BigData/" href="/categories/BigData/"
-              id="categoriesBigData"
-              ><div class='name'>BigData</div><div class='badge'>(1)</div></a></li>
+              ><div class='name'>BIGDATA</div><div class='badge'>(2)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/DL/" href="/categories/DL/"
               id="categoriesDL"
-              ><div class='name'>DL</div><div class='badge'>(16)</div></a></li>
+              ><div class='name'>DL</div><div class='badge'>(14)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/DataAnalysis/" href="/categories/DataAnalysis/"
@@ -2476,7 +1860,7 @@ URL的各种格式如下：
             <li><a class="flat-box"
               title="/categories/INTERESTING/" href="/categories/INTERESTING/"
               id="categoriesINTERESTING"
-              ><div class='name'>INTERESTING</div><div class='badge'>(3)</div></a></li>
+              ><div class='name'>INTERESTING</div><div class='badge'>(2)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/JAVA/" href="/categories/JAVA/"
@@ -2494,11 +1878,6 @@ URL的各种格式如下：
               ><div class='name'>ML</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
-              title="/categories/MySQL/" href="/categories/MySQL/"
-              id="categoriesMySQL"
-              ><div class='name'>MySQL</div><div class='badge'>(2)</div></a></li>
-          
-            <li><a class="flat-box"
               title="/categories/PAPER/" href="/categories/PAPER/"
               id="categoriesPAPER"
               ><div class='name'>PAPER</div><div class='badge'>(1)</div></a></li>
@@ -2506,7 +1885,7 @@ URL的各种格式如下：
             <li><a class="flat-box"
               title="/categories/TOOLS/" href="/categories/TOOLS/"
               id="categoriesTOOLS"
-              ><div class='name'>TOOLS</div><div class='badge'>(7)</div></a></li>
+              ><div class='name'>TOOLS</div><div class='badge'>(6)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" href="/categories/java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"
@@ -2519,19 +1898,24 @@ URL的各种格式如下：
               ><div class='name'>《网络是怎样连接的》</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
-              title="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"
-              id="categoriesE68A80E69CAFE6A088"
-              ><div class='name'>技术栈</div><div class='badge'>(13)</div></a></li>
+              title="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/" href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/"
+              id="categoriesE4BA91E58E9FE7949F"
+              ><div class='name'>云原生</div><div class='badge'>(4)</div></a></li>
           
             <li><a class="flat-box"
-              title="/categories/%E6%96%99%E7%90%86/" href="/categories/%E6%96%99%E7%90%86/"
-              id="categoriesE69699E79086"
-              ><div class='name'>料理</div><div class='badge'>(1)</div></a></li>
+              title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
+              id="categoriesE5B7A5E585B7"
+              ><div class='name'>工具</div><div class='badge'>(1)</div></a></li>
+          
+            <li><a class="flat-box"
+              title="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/" href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/"
+              id="categoriesE68A80E69CAFE6A088"
+              ><div class='name'>技术栈</div><div class='badge'>(36)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/%E6%97%A5%E6%8A%A5/" href="/categories/%E6%97%A5%E6%8A%A5/"
               id="categoriesE697A5E68AA5"
-              ><div class='name'>日报</div><div class='badge'>(2)</div></a></li>
+              ><div class='name'>日报</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
               title="/categories/%E7%90%86%E8%B4%A2/" href="/categories/%E7%90%86%E8%B4%A2/"
@@ -2539,19 +1923,14 @@ URL的各种格式如下：
               ><div class='name'>理财</div><div class='badge'>(1)</div></a></li>
           
             <li><a class="flat-box"
+              title="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+              id="categoriesE8AFBBE4B9A6E7AC94E8AEB0"
+              ><div class='name'>读书笔记</div><div class='badge'>(2)</div></a></li>
+          
+            <li><a class="flat-box"
               title="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/"
               id="categoriesE997AEE9A298E5928CE68A80E5B7A7"
-              ><div class='name'>问题和技巧</div><div class='badge'>(47)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"
-              id="categoriesE99DA2E8AF95E9A298"
-              ><div class='name'>面试题</div><div class='badge'>(2)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
-              id="categoriesE9A1B9E79BAE"
-              ><div class='name'>项目</div><div class='badge'>(3)</div></a></li>
+              ><div class='name'>问题和技巧</div><div class='badge'>(81)</div></a></li>
           
         </ul>
       </div>
@@ -2571,7 +1950,7 @@ URL的各种格式如下：
 
 
     <div class='content'>
-    <a href="/tags/IELTS/" style="font-size: 15.25px; color: #919191">IELTS</a> <a href="/tags/Linux/" style="font-size: 16.5px; color: #888">Linux</a> <a href="/tags/MySQL/" style="font-size: 15.25px; color: #919191">MySQL</a> <a href="/tags/Pyecharts/" style="font-size: 14px; color: #999">Pyecharts</a> <a href="/tags/UUID/" style="font-size: 14px; color: #999">UUID</a> <a href="/tags/bigdata/" style="font-size: 14px; color: #999">bigdata</a> <a href="/tags/devops/" style="font-size: 14px; color: #999">devops</a> <a href="/tags/dl/" style="font-size: 24px; color: #555">dl</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/flink/" style="font-size: 14px; color: #999">flink</a> <a href="/tags/git/" style="font-size: 20.25px; color: #6f6f6f">git</a> <a href="/tags/go/" style="font-size: 24px; color: #555">go</a> <a href="/tags/gpu/" style="font-size: 14px; color: #999">gpu</a> <a href="/tags/interesting/" style="font-size: 15.25px; color: #919191">interesting</a> <a href="/tags/java/" style="font-size: 22.75px; color: #5e5e5e">java</a> <a href="/tags/linux/" style="font-size: 16.5px; color: #888">linux</a> <a href="/tags/math/" style="font-size: 16.5px; color: #888">math</a> <a href="/tags/ml/" style="font-size: 14px; color: #999">ml</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/numpy/" style="font-size: 14px; color: #999">numpy</a> <a href="/tags/paper/" style="font-size: 14px; color: #999">paper</a> <a href="/tags/pip/" style="font-size: 14px; color: #999">pip</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/scala/" style="font-size: 14px; color: #999">scala</a> <a href="/tags/shell/" style="font-size: 21.5px; color: #666">shell</a> <a href="/tags/spark/" style="font-size: 15.25px; color: #919191">spark</a> <a href="/tags/sre/" style="font-size: 14px; color: #999">sre</a> <a href="/tags/ssh/" style="font-size: 14px; color: #999">ssh</a> <a href="/tags/tool/" style="font-size: 14px; color: #999">tool</a> <a href="/tags/tools/" style="font-size: 19px; color: #777">tools</a> <a href="/tags/%E4%B8%AD%E5%9B%BD%E6%96%99%E7%90%86/" style="font-size: 14px; color: #999">中国料理</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">反射</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 16.5px; color: #888">操作系统</a> <a href="/tags/%E6%94%B6%E7%9B%8A%E6%8C%87%E6%A0%87/" style="font-size: 14px; color: #999">收益指标</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/" style="font-size: 16.5px; color: #888">数据仓库</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 14px; color: #999">数据库</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%97%A5%E6%8A%A5/" style="font-size: 15.25px; color: #919191">日报</a> <a href="/tags/%E6%99%BA%E5%8A%9B%E9%A2%98/" style="font-size: 14px; color: #999">智力题</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 17.75px; color: #808080">计算机网络</a> <a href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" style="font-size: 14px; color: #999">负载均衡</a>
+    <a href="/tags/Docker/" style="font-size: 14px; color: #999">Docker</a> <a href="/tags/GitOps/" style="font-size: 14px; color: #999">GitOps</a> <a href="/tags/IELTS/" style="font-size: 14.91px; color: #939393">IELTS</a> <a href="/tags/LVS/" style="font-size: 14px; color: #999">LVS</a> <a href="/tags/Linux/" style="font-size: 24px; color: #555">Linux</a> <a href="/tags/Pyecharts/" style="font-size: 14px; color: #999">Pyecharts</a> <a href="/tags/UUID/" style="font-size: 14px; color: #999">UUID</a> <a href="/tags/bigdata/" style="font-size: 14px; color: #999">bigdata</a> <a href="/tags/devops/" style="font-size: 14px; color: #999">devops</a> <a href="/tags/dl/" style="font-size: 22.18px; color: #616161">dl</a> <a href="/tags/docker/" style="font-size: 14.91px; color: #939393">docker</a> <a href="/tags/ebpf/" style="font-size: 14px; color: #999">ebpf</a> <a href="/tags/flink/" style="font-size: 14px; color: #999">flink</a> <a href="/tags/gateway/" style="font-size: 14px; color: #999">gateway</a> <a href="/tags/git/" style="font-size: 18.55px; color: #7a7a7a">git</a> <a href="/tags/go/" style="font-size: 23.09px; color: #5b5b5b">go</a> <a href="/tags/gpu/" style="font-size: 14px; color: #999">gpu</a> <a href="/tags/interesting/" style="font-size: 14.91px; color: #939393">interesting</a> <a href="/tags/iptables/" style="font-size: 14.91px; color: #939393">iptables</a> <a href="/tags/istio/" style="font-size: 14px; color: #999">istio</a> <a href="/tags/java/" style="font-size: 21.27px; color: #686868">java</a> <a href="/tags/k8s/" style="font-size: 20.36px; color: #6e6e6e">k8s</a> <a href="/tags/keepalived/" style="font-size: 14px; color: #999">keepalived</a> <a href="/tags/math/" style="font-size: 15.82px; color: #8d8d8d">math</a> <a href="/tags/ml/" style="font-size: 14px; color: #999">ml</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/numpy/" style="font-size: 14px; color: #999">numpy</a> <a href="/tags/paper/" style="font-size: 14px; color: #999">paper</a> <a href="/tags/pip/" style="font-size: 14px; color: #999">pip</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/shell/" style="font-size: 19.45px; color: #747474">shell</a> <a href="/tags/spark/" style="font-size: 14.91px; color: #939393">spark</a> <a href="/tags/sre/" style="font-size: 15.82px; color: #8d8d8d">sre</a> <a href="/tags/tool/" style="font-size: 14px; color: #999">tool</a> <a href="/tags/tools/" style="font-size: 17.64px; color: #808080">tools</a> <a href="/tags/yaml/" style="font-size: 14px; color: #999">yaml</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14.91px; color: #939393">加密</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">反射</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 14.91px; color: #939393">操作系统</a> <a href="/tags/%E6%94%B6%E7%9B%8A%E6%8C%87%E6%A0%87/" style="font-size: 14px; color: #999">收益指标</a> <a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 14px; color: #999">效率</a> <a href="/tags/%E6%97%A5%E6%8A%A5/" style="font-size: 14px; color: #999">日报</a> <a href="/tags/%E6%9C%AC%E7%AB%99%E8%B5%B7%E6%BA%90/" style="font-size: 14px; color: #999">本站起源</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 16.73px; color: #868686">计算机网络</a> <a href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" style="font-size: 14px; color: #999">负载均衡</a>
     </div>
 </section>
 
@@ -2599,18 +1978,18 @@ URL的各种格式如下：
             
 
             <div class="post-img-box">
-              <a href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/112.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/580.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-13</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/13/go%E5%88%86%E6%9E%90%E9%A2%98%E4%B9%8Bfor%E5%BE%AA%E7%8E%AF%E9%87%8C%E6%89%A7%E8%A1%8C%E5%8D%8F%E7%A8%8B%EF%BC%8C%E6%89%93%E5%8D%B0i%E5%80%BC/">go分析题之for循环里执行协程，打印i值</a>
+              <a class="post-title" href="/2023/01/05/Kubernetes%E6%A0%B8%E5%BF%83%E6%8C%87%E6%A0%87%E7%9B%91%E6%8E%A7%E2%80%94%E2%80%94Metrics_Server%E8%AF%A6%E8%A7%A3/">Kubernetes核心指标监控——Metrics_Server详解</a>
             </div>
           </div>
         
@@ -2620,18 +1999,18 @@ URL的各种格式如下：
             
 
             <div class="post-img-box">
-              <a href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/741.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-13</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/13/go%E8%83%BD%E9%87%8D%E8%BD%BD%E5%90%97/">go能重载吗</a>
+              <a class="post-title" href="/2023/01/05/iptables%E9%83%A8%E7%BD%B2%E5%92%8C%E4%BD%BF%E7%94%A8/">iptables部署和使用</a>
             </div>
           </div>
         
@@ -2641,18 +2020,18 @@ URL的各种格式如下：
             
 
             <div class="post-img-box">
-              <a href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/139.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/596.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-09</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/09/go%E5%88%87%E7%89%87%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%9A%E8%A2%AB%E6%94%B9%E5%8F%98%E5%90%97/">go切片作为函数参数会被改变吗</a>
+              <a class="post-title" href="/2023/01/05/%E5%9F%BA%E4%BA%8E%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E8%A7%A3%E8%AF%BBK8S_Pod%E7%9A%84%E5%90%84%E7%A7%8D%E5%BC%82%E5%B8%B8/">基于真实场景解读K8S_Pod的各种异常</a>
             </div>
           </div>
         
@@ -2662,18 +2041,18 @@ URL的各种格式如下：
             
 
             <div class="post-img-box">
-              <a href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/135.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/27.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-09</span>
+                  <span class="post-date">01-05</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/09/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">正向代理和反向代理</a>
+              <a class="post-title" href="/2023/01/05/%E7%90%86%E8%A7%A3K8S%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93%E4%B9%8BList-Watch%E6%9C%BA%E5%88%B6%E5%92%8CInformer%E6%A8%A1%E5%9D%97/">理解K8S的设计精髓之List-Watch机制和Informer模块</a>
             </div>
           </div>
         
@@ -2683,18 +2062,18 @@ URL的各种格式如下：
             
 
             <div class="post-img-box">
-              <a href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/" class="post-img " style="background-size: cover; 
+              <a href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/136.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <img class="lazyload" style="width:100%;height:100%;object-fit:cover;" data-src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/66.jpg" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">06-08</span>
+                  <span class="post-date">01-02</span>
                 
               </div>
-              <a class="post-title" href="/2022/06/08/go%E7%AE%97%E6%B3%95%E9%A2%98%E6%95%B4%E7%90%86%E4%B9%8B%E5%89%91%E6%8C%87offer/">go算法题整理之剑指offer</a>
+              <a class="post-title" href="/2023/01/02/SRE%E5%B7%A5%E4%BD%9C%E6%89%8B%E5%86%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%80/">SRE工作手册读书笔记一</a>
             </div>
           </div>
         
@@ -2705,7 +2084,7 @@ URL的各种格式如下：
     
   <section class="widget side_archives">
     
-    <header><a style="color: red" href='/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">June 2022</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">May 2022</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">April 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">March 2022</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">February 2022</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">November 2021</span><span class="card-archive-list-count">3</span></a></li></ul></div>
+    <header><a style="color: red" href='/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">September 2022</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">August 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">July 2022</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">June 2022</span><span class="card-archive-list-count">23</span></a></li></ul></div>
   </section>
 
     <section class="widget side_webinfo">
@@ -2722,7 +2101,7 @@ URL的各种格式如下：
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>124 篇</div>
+          <div>175 篇</div>
         </div>
       
 
@@ -2744,7 +2123,7 @@ URL的各种格式如下：
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>221.6k 字</div>
+          <div>273.5k 字</div>
         </div>
       
 
@@ -2756,8 +2135,8 @@ URL的各种格式如下：
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Thu Jun 16 2022 10:30:35 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2022-06-16 日</div>
+            <div id="last-update" style="display: none;">Wed Jun 28 2023 21:32:39 GMT+0800 (China Standard Time)</div>
+            <div id="last-update-show">2023-06-28 日</div>
           
         </div>
         
@@ -2807,7 +2186,7 @@ URL的各种格式如下：
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2022-06-16 日';
+            document.getElementById('last-update-show').innerHTML = '2023-06-28 日';
           }
         </script>
         
@@ -2840,7 +2219,13 @@ URL的各种格式如下：
 <!-- 雪花和花瓣特效 -->
 
   
-    <script src="/js/falling/sakura.js"></script>
+    <script type="text/javascript">
+      //只在桌面版网页启用特效
+      var windowWidth = $(window).width();
+      if (windowWidth > 768) {
+        loadScript('/js/falling/sakura.js');
+      }
+    </script>
   
 
 
@@ -2854,7 +2239,8 @@ URL的各种格式如下：
     <!-- 页脚 -->
     
   
-  <!-- 底部鱼儿跳动效果，依赖于jquery-->
+  
+    <!-- 底部鱼儿跳动效果，依赖于jquery-->
 <div id="j-fish-skip" style=" position: relative;height: 153px;width: auto;"></div>
 <script>
   var RENDERER = {
@@ -3011,6 +2397,7 @@ URL的各种格式如下：
     })
   });
 </script>
+  
   <div class="footer bg-color">
     <div class="footer-main">
       
@@ -3022,7 +2409,7 @@ URL的各种格式如下：
       
         
           <div class="footer-copyright">
-            <p>Copyright © 2020 - 2022 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra" style="display: inline-block;  vertical-align: middle;"><img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" align="absmiddle" width="59px" height="30px" /></a></p>
+            <p>Copyright © 2020 - 2023 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">鲁ICP备2022021620号-1</a> </p>
 
           </div>
         
@@ -3033,6 +2420,8 @@ URL的各种格式如下：
       
         
           <div class="footer-custom">
+            
+              <div><div style="width:300px;margin:0 auto; padding:20px 0;"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37140202001145" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://snowgo.top/medias/1.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37140202001145号</p></a></div></div>
             
           </div>
         
@@ -3104,12 +2493,16 @@ URL的各种格式如下：
 <style>
 .aplayer .aplayer-lrc p {
   
+  display: none;
+  
   font-size: 12px;
   font-weight: 700;
   line-height: 16px !important;
 }
 
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
   
   font-size: 15px;
   color: #010202;
@@ -3130,7 +2523,7 @@ URL的各种格式如下：
   class=""
   server="netease"
   type="playlist"
-  id="2303619958"
+  id="7133935892"
   fixed='true'
   autoplay='false'
   theme='#010202'
@@ -3558,13 +2951,14 @@ URL的各种格式如下：
 
 <div class="pjax-animate">
   
-    <div class="loading-circle"><div id="loader-circle"></div></div>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
     <script>
       window.ShowLoading = function() {
-        $(".loading-circle").css("display", "block");
+        NProgress.start();
       };
       window.HideLoading = function() {
-        $(".loading-circle").css("display", "none");
+        NProgress.done();
       }
     </script>
   

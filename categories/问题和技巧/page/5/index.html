@@ -19,21 +19,6 @@
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
-    <script>
-        var themeModelId = '';
-        if (themeModelId) {
-            localStorage.setItem('modelId', themeModelId);
-        }
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
-    <script>
-        var live2dOpen = eval('true') || false;
-        if (!live2dOpen) {
-            localStorage.setItem('waifu-display', 1609323474481);
-        }
-    </script>
-  
   
   
 <link rel="stylesheet" href="/css/animate.min.css">
@@ -63,7 +48,7 @@
     <!-- import link -->
     
         
-            
+            <link href="/custom/index.css" rel="stylesheet">
         
             
         
@@ -96,30 +81,6 @@
   <body>
     <!-- 预加载动画 -->
     <!-- 页面预加载动画 -->
-
-<div id='loader'>
-  <link rel="stylesheet" href="/js/loaded/index.css" >
-  <div class="loading-left-bg"></div>
-  <div class="loading-right-bg"></div>
-  <div class="spinner-box">
-    <div class="configure-border-1">
-      <div class="configure-core"></div>
-    </div>
-    <div class="configure-border-2">
-      <div class="configure-core"></div>
-    </div>
-    <div class="loading-word">loading...</div>
-  </div>
-</div>
-
-<script>
-  var endLoading = function () {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loader').classList.add("loading");
-  }
-  window.addEventListener('DOMContentLoaded',endLoading);
-  
-</script>
 
     
     <!-- 判断是否为暗黑风格 -->
@@ -225,7 +186,7 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+      <img class="drawer-box-head_logo" src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
       <h3 class="drawer-box-head_title">snowgo</h3>
       <h5 class="drawer-box-head_desc"></h5>
     </div>
@@ -302,47 +263,12 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/bangumis" class="drawer-menu-item-link">
+                <a href="/chatgpt" class="drawer-menu-item-link">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
-                  <span>
-                    
-                      <i class="fas fa-link"></i>
-                    
-                    <span class="name">更多</span>
-                  </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
-                </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(7)">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -409,7 +335,7 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
+          <img src="https://snowgo.top/medias/pre-medias/logo.png" alt="logo">
         </div>
       
       <a href="/" class="logo">snowgo</a>
@@ -486,45 +412,12 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/bangumis" class="menu-item-link" title="追番">
+                <a href="/chatgpt" class="menu-item-link" title="ChatGPT">
                   
-                    <i class="fas fa-video-camera" aria-hidden="true"></i>
+                    <i class="fas fa-paper-plane-o" aria-hidden="true"></i>
                   
-                  <span class="name">追番</span>
+                  <span class="name">ChatGPT</span>
                 </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="javascript:;" class="menu-item-link" title="更多">
-                  
-                    <i class="fas fa-link"></i>
-                  
-                  <span class="name">更多</span>
-                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
-                </a>
-                <ul class="sub-menu">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -647,7 +540,7 @@
 <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
 <div class="bg-light-floor-categoryDetail" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
 
-<div class="category-header"  style="background-image:url('https://5nowg0.oss-cn-hangzhou.aliyuncs.com/pre-medias/15.jpg')">
+<div class="category-header"  style="background-image:url('https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/15.jpg')">
   <div class="category-header-title">
     category
   </div>
@@ -678,7 +571,7 @@
 
 <div class="category-video">
   <video class="full-video" autoplay loop muted>
-      <source style="width: 100%;height: 100vh;" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/none">
+      <source style="width: 100%;height: 100vh;" src="https://snowgo.top/medias/none">
   </video>
   <div class="video-header-title">
     category
@@ -722,128 +615,10 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-03-11</span>
+            <span class="post-time">2022-06-05</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/03/11/Vscode%E4%B8%8A%E9%85%8D%E7%BD%AEGo-Mac%E7%89%88%E6%9C%AC/">Vscode上配置Go-Mac版本</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/devops/" rel="tag">devops</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sre/" rel="tag">sre</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/03/11/Vscode%E4%B8%8A%E9%85%8D%E7%BD%AEGo-Mac%E7%89%88%E6%9C%AC/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/71.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/71.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            安装go
-在https://go.dev/dl/下载
-
-下载pkg后自动配置GOROOT
-
-使用go env可以查看配置的go环境变量
-
-配置GOPATH以及其下的src，pkg，bin目录
-配置vscode
-vscode安装go，code
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/03/11/Vscode%E4%B8%8A%E9%85%8D%E7%BD%AEGo-Mac%E7%89%88%E6%9C%AC/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/03/11/Vscode%E4%B8%8A%E9%85%8D%E7%BD%AEGo-Mac%E7%89%88%E6%9C%AC/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/71.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/71.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-03-08</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/03/08/GPU%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">GPU操作指南</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gpu/" rel="tag">gpu</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/03/08/GPU%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            跑代码的时候指定一块显卡跑#按照PCI_BUS_ID顺序从0开始排列GPU设备os.environ[“CUDA_DEVICE_ORDER”]=”PCI_BUS_ID”
-#设置当前使用的GPU设备仅为0号设备 设备名称为’/gpu:0’os.
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/03/08/GPU%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/03/08/GPU%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/163.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-03-04</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/03/04/Git-clone%E6%97%B6%E6%8A%A5%E9%94%99/">Git-clone时报错</a>
+            <a class="post-title-link" href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/">将本地项目push到github</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
@@ -865,25 +640,27 @@ vscode安装go，code
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/03/04/Git-clone%E6%97%B6%E6%8A%A5%E9%94%99/" style="background-size: cover; 
+            <a href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/37.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/37.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/59.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            error: invalid path ‘Icon?’fatal: unable to checkout working tree warning: Clone succeeded, but checkout failed.错因：windo
+            初始化再当前项目下git init
+添加文件git add .git commit -m &quot; &quot;
+在github上新建一个仓库并与本地关联根据使用的协议，远程URL可以以HTTPS或SSH开头。如果未指定协议，则默认为S
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/03/04/Git-clone%E6%97%B6%E6%8A%A5%E9%94%99/">
+          <a href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/03/04/Git-clone%E6%97%B6%E6%8A%A5%E9%94%99/" style="background-size: cover; 
+        <a href="/2022/06/05/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AEpush%E5%88%B0github/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/37.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/37.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/59.jpg" alt="">
         </a>
       </div>
     </article>
@@ -894,17 +671,17 @@ vscode安装go，code
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-03-04</span>
+            <span class="post-time">2022-06-03</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/03/04/numpy%E7%9A%84n%E7%BB%B4%E7%9F%A9%E9%98%B5np.sum()%E4%B8%AD%E5%8F%82%E6%95%B0axis%E7%9A%84%E7%90%86%E8%A7%A3/">numpy的n维矩阵np.sum()中参数axis的理解</a>
+            <a class="post-title-link" href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/">go闭包中值的传递</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/numpy/" rel="tag">numpy</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -919,25 +696,26 @@ vscode安装go，code
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/03/04/numpy%E7%9A%84n%E7%BB%B4%E7%9F%A9%E9%98%B5np.sum()%E4%B8%AD%E5%8F%82%E6%95%B0axis%E7%9A%84%E7%90%86%E8%A7%A3/" style="background-size: cover; 
+            <a href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/23.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/23.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/123.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            个人看来，numpy的高维矩阵，是基于一维向量和二维数组就可以进行理解的，也就是说每次把元素拓展成一个向量，就可以多出一个维度，n为偶数时，只不过是二维数组套二维数组，类似套娃的形式即可理解。其索引是由外向内的，本质还是列表嵌套的形式的，比
+            go闭包中对外部变量是以引用的形式传递进去，如下代码所示：
+123456789101112131415package mainfunc main() &#123;	var funcSlice []func()	for i := 0; i &
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/03/04/numpy%E7%9A%84n%E7%BB%B4%E7%9F%A9%E9%98%B5np.sum()%E4%B8%AD%E5%8F%82%E6%95%B0axis%E7%9A%84%E7%90%86%E8%A7%A3/">
+          <a href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/03/04/numpy%E7%9A%84n%E7%BB%B4%E7%9F%A9%E9%98%B5np.sum()%E4%B8%AD%E5%8F%82%E6%95%B0axis%E7%9A%84%E7%90%86%E8%A7%A3/" style="background-size: cover; 
+        <a href="/2022/06/03/go%E9%97%AD%E5%8C%85%E4%B8%AD%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/23.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/23.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/123.jpg" alt="">
         </a>
       </div>
     </article>
@@ -948,17 +726,17 @@ vscode安装go，code
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-02-12</span>
+            <span class="post-time">2022-05-30</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/02/12/java%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E6%B7%BB%E5%8A%A0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/">java动态数组添加另一个动态数组</a>
+            <a class="post-title-link" href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/">shell系列题之转置文件的内容</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/" rel="tag">shell</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -973,27 +751,27 @@ vscode安装go，code
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/02/12/java%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E6%B7%BB%E5%8A%A0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/" style="background-size: cover; 
+            <a href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/182.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/182.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/189.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            下面两种写法是等价的，这样添加数组不受数组后续变动的影响！
-1ans.add(new LinkedList&lt;&gt;(tmp));
-1234LinkedList&lt;Integer&gt; tmps = new LinkedList
+            描述写一个 bash脚本来转置文本文件nowcoder.txt中的文件内容。
+为了简单起见，你可以假设：你可以假设每行列数相同，并且每个字段由空格分隔
+示例:假设 nowcoder.txt 内容如下：job salaryc++ 13java
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/02/12/java%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E6%B7%BB%E5%8A%A0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/">
+          <a href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/02/12/java%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E6%B7%BB%E5%8A%A0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/" style="background-size: cover; 
+        <a href="/2022/05/30/shell%E7%B3%BB%E5%88%97%E9%A2%98%E4%B9%8B%E8%BD%AC%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%86%85%E5%AE%B9/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/182.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/182.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/189.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1004,10 +782,118 @@ vscode安装go，code
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-02-10</span>
+            <span class="post-time">2022-05-14</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/02/10/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bgrep/">Linux小技巧之grep</a>
+            <a class="post-title-link" href="/2022/05/14/git-Merge%E5%92%8CRebase%E7%9A%84%E6%80%BB%E7%BB%93/">git-Merge和Rebase的总结</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/05/14/git-Merge%E5%92%8CRebase%E7%9A%84%E6%80%BB%E7%BB%93/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/198.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            介绍Merge和Rebase是合并两个分支的操作。都是checkout到某个分支上，然后把别的分支合并的该分支。其中，Merge在没有分叉的情况下，会自动使用fast-forward的方式，快速移动：Merge在有分叉的情况下，会产生一个新
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/05/14/git-Merge%E5%92%8CRebase%E7%9A%84%E6%80%BB%E7%BB%93/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/05/14/git-Merge%E5%92%8CRebase%E7%9A%84%E6%80%BB%E7%BB%93/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/198.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-05-14</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/05/14/go%5B%5Dbyte%E5%92%8Cstring%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E8%BD%AC%E6%8D%A2/">go[]byte和string的高性能转换</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/05/14/go%5B%5Dbyte%E5%92%8Cstring%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E8%BD%AC%E6%8D%A2/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            在fasthttp的最佳实践中有这么一句话：Avoid conversion between []byte and string, since this may result in memory allocation+copy. Fasth
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/05/14/go%5B%5Dbyte%E5%92%8Cstring%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E8%BD%AC%E6%8D%A2/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/05/14/go%5B%5Dbyte%E5%92%8Cstring%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E8%BD%AC%E6%8D%A2/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/161.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-05-14</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/05/14/linux%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3/">Linux平均负载怎么理解</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
@@ -1029,25 +915,25 @@ vscode安装go，code
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/02/10/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bgrep/" style="background-size: cover; 
+            <a href="/2022/05/14/linux%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/184.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/184.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/65.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            作为linux中最为常用的三大文本（awk，sed，grep）处理工具之一，掌握好其用法是很有必要的。首先谈一下grep命令的常用格式为：grep  [选项]  ‘模式’  [文件]grep家族总共有三个：grep，egrep，fgrep。
+            什么是平均负载平均负载是指单位时间内，系统处于可运行状态和不可中断状态的平均进程数，也就是平均活跃进程数，它和 CPU 使用率并没有直接关系。所谓可运行状态的进程，是指正在使用 CPU 或者正在等待 CPU 的进程，也就是我们常用 ps 命
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/02/10/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bgrep/">
+          <a href="/2022/05/14/linux%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3/">
             <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/02/10/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bgrep/" style="background-size: cover; 
+        <a href="/2022/05/14/linux%E5%B9%B3%E5%9D%87%E8%B4%9F%E8%BD%BD%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/184.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/184.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/65.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1058,17 +944,17 @@ vscode安装go，code
         <div class="post-info">
           <div class="post-time">
             <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-02-09</span>
+            <span class="post-time">2022-05-13</span>
           </div>
           <div class="post-title">
-            <a class="post-title-link" href="/2022/02/09/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bls/">Linux小技巧之ls</a>
+            <a class="post-title-link" href="/2022/05/13/go%E4%BD%BF%E7%94%A8%E6%8C%87%E9%92%88%E7%B1%BB%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E7%9A%84%E6%8E%A5%E6%94%B6%E8%80%85%E7%9A%84%E7%90%86%E7%94%B1/">go使用指针类型作为方法的接收者的理由</a>
           </div>
           <div class="post-meta">
             <div class="post-tags">
               <!-- 文章详情页的标签 -->
 
     <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
 
             </div>
             <div class="post-categories">
@@ -1083,27 +969,193 @@ vscode安装go，code
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="/2022/02/09/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bls/" style="background-size: cover; 
+            <a href="/2022/05/13/go%E4%BD%BF%E7%94%A8%E6%8C%87%E9%92%88%E7%B1%BB%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E7%9A%84%E6%8E%A5%E6%94%B6%E8%80%85%E7%9A%84%E7%90%86%E7%94%B1/" style="background-size: cover; 
               background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/196.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/196.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/82.jpg" alt="">
             </a>
           </div>
           <div class="post-content">
-            ls 命令的含义是list显示当前目录中的文件名字。注意不加参数它显示除隐藏文件外的所有文件及目录的名字。​
-​1）ls –a 显示当前目录中的所有文件，包含隐藏文件命令：
-1aijian.shi@U-aijian-shi:~/Downlo
+            
+使用指针类型能够修改调用者的值。 
+使用指针类型可以避免在每次调用方法时复制该值，在值的类型为大型结构体时，这样做会更加高效
+
+
           </div>
         </div>
         <div class="post-more">
-          <a href="/2022/02/09/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bls/">
+          <a href="/2022/05/13/go%E4%BD%BF%E7%94%A8%E6%8C%87%E9%92%88%E7%B1%BB%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E7%9A%84%E6%8E%A5%E6%94%B6%E8%80%85%E7%9A%84%E7%90%86%E7%94%B1/">
             <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
       <div class="post-img">
-        <a href="/2022/02/09/Linux%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8Bls/" style="background-size: cover; 
+        <a href="/2022/05/13/go%E4%BD%BF%E7%94%A8%E6%8C%87%E9%92%88%E7%B1%BB%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E7%9A%84%E6%8E%A5%E6%94%B6%E8%80%85%E7%9A%84%E7%90%86%E7%94%B1/" style="background-size: cover; 
           background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/196.jpg" class="lazyload placeholder" data-srcset="https://5nowg0.oss-cn-hangzhou.aliyuncs.com/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/196.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/82.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-05-13</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/05/13/go%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E6%8C%87%E9%92%88%E6%98%AF%E5%90%A6%E5%AE%89%E5%85%A8/">go函数返回局部变量的指针是否安全</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/05/13/go%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E6%8C%87%E9%92%88%E6%98%AF%E5%90%A6%E5%AE%89%E5%85%A8/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/6.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            一般来说，局部变量会在函数返回后被销毁，因此被返回的引用就成为了”无所指”的引用，程序会进入未知状态。但这在 Go 中是安全的，Go 编译器将会对每个局部变量进行逃逸分析。如果发现局部变量的作用域超出该函数，则不会将内存分配在栈上，而是分配
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/05/13/go%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E6%8C%87%E9%92%88%E6%98%AF%E5%90%A6%E5%AE%89%E5%85%A8/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/05/13/go%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E6%8C%87%E9%92%88%E6%98%AF%E5%90%A6%E5%AE%89%E5%85%A8/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/6.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-05-13</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/05/13/go%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%B3%E9%94%AE%E5%AD%97/">go有哪些关键字</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/05/13/go%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%B3%E9%94%AE%E5%AD%97/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/212.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            go中有25个关键字注：fallthrough是用于打破switch中默认break的限制
+
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/05/13/go%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%B3%E9%94%AE%E5%AD%97/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/05/13/go%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%B3%E9%94%AE%E5%AD%97/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/212.jpg" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-05-12</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2022/05/12/go_channel%E7%AE%80%E4%BB%8B/">go_channel简介</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">问题和技巧</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/2022/05/12/go_channel%E7%AE%80%E4%BB%8B/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/140.jpg" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            channel 简介goroutine 是 Go 中实现并发的重要机制，channel 是 goroutine 之间进行通信的重要桥梁。使用内建函数 make 可以创建 channel，举例如下：
+1ch := make(chan int)
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2022/05/12/go_channel%E7%AE%80%E4%BB%8B/">
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/2022/05/12/go_channel%E7%AE%80%E4%BB%8B/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload" src="https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/140.jpg" alt="">
         </a>
       </div>
     </article>
@@ -1113,7 +1165,7 @@ vscode安装go，code
 <div class="w-70">
   
   <!-- <nav class="page-nav">
-    <a class="extend prev" rel="prev" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/4/">Prev</a><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">1</a><span class="space">&hellip;</span><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/3/">3</a><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/4/">Prev</a><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/">1</a><span class="space">&hellip;</span><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/3/">3</a><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/6/">6</a><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/9/">9</a><a class="extend next" rel="next" href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/6/">Next</a>
   </nav> -->
   <div class="page-nav">
     
@@ -1123,9 +1175,14 @@ vscode安装go，code
       </a>
     
     <div class="page-info">
-        <div class="page-info-text">5 / 5</div>
+        <div class="page-info-text">5 / 9</div>
     </div>
     
+      <a href="/categories/%E9%97%AE%E9%A2%98%E5%92%8C%E6%8A%80%E5%B7%A7/page/6/"
+         class="page-nav-next">
+          <span class="mr-5">Next</span><i class="fas fa-angle-right"></i>
+      </a>
+      
   </div>
 
 </div>
@@ -1136,7 +1193,8 @@ vscode安装go，code
     <!-- 页脚 -->
     
   
-  <!-- 底部鱼儿跳动效果，依赖于jquery-->
+  
+    <!-- 底部鱼儿跳动效果，依赖于jquery-->
 <div id="j-fish-skip" style=" position: relative;height: 153px;width: auto;"></div>
 <script>
   var RENDERER = {
@@ -1293,6 +1351,7 @@ vscode安装go，code
     })
   });
 </script>
+  
   <div class="footer bg-color">
     <div class="footer-main">
       
@@ -1304,7 +1363,7 @@ vscode安装go，code
       
         
           <div class="footer-copyright">
-            <p>Copyright © 2020 - 2022 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra" style="display: inline-block;  vertical-align: middle;"><img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" align="absmiddle" width="59px" height="30px" /></a></p>
+            <p>Copyright © 2020 - 2023 <a target="_blank" rel="noopener" href="https://github.com/snowgo">snowgo</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> | <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">鲁ICP备2022021620号-1</a> </p>
 
           </div>
         
@@ -1315,6 +1374,8 @@ vscode安装go，code
       
         
           <div class="footer-custom">
+            
+              <div><div style="width:300px;margin:0 auto; padding:20px 0;"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37140202001145" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://snowgo.top/medias/1.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37140202001145号</p></a></div></div>
             
           </div>
         
@@ -1386,12 +1447,16 @@ vscode安装go，code
 <style>
 .aplayer .aplayer-lrc p {
   
+  display: none;
+  
   font-size: 12px;
   font-weight: 700;
   line-height: 16px !important;
 }
 
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
   
   font-size: 15px;
   color: #010202;
@@ -1412,7 +1477,7 @@ vscode安装go，code
   class=""
   server="netease"
   type="playlist"
-  id="2303619958"
+  id="7133935892"
   fixed='true'
   autoplay='false'
   theme='#010202'
@@ -1840,13 +1905,14 @@ vscode安装go，code
 
 <div class="pjax-animate">
   
-    <div class="loading-circle"><div id="loader-circle"></div></div>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
     <script>
       window.ShowLoading = function() {
-        $(".loading-circle").css("display", "block");
+        NProgress.start();
       };
       window.HideLoading = function() {
-        $(".loading-circle").css("display", "none");
+        NProgress.done();
       }
     </script>
   

@@ -1,0 +1,12 @@
+---
+title: Alfred_5搜不到文件
+date: 2022-09-22
+swiper: false
+swiperImg: 'https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/696.jpg'
+img: 'https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/696.jpg'
+bgImg: 'https://snowgo.top/medias/%E7%AB%99%E7%82%B9%E5%A3%81%E7%BA%B8%E5%92%8C%E8%A7%86%E9%A2%91/mangojuice/pic/696.jpg'
+categories: 问题和技巧
+tags: [效率]
+top: false
+---
+
