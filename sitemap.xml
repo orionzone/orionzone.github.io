@@ -1369,13 +1369,6 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/Linux/</loc>
-    <lastmod>2023-07-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://snowgo.live/tags/dl/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
@@ -1384,6 +1377,13 @@
   
   <url>
     <loc>https://snowgo.live/tags/tools/</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://snowgo.live/tags/Linux/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1404,7 +1404,7 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/istio/</loc>
+    <loc>https://snowgo.live/tags/k8s/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1418,14 +1418,7 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/k8s/</loc>
-    <lastmod>2023-07-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://snowgo.live/tags/git/</loc>
+    <loc>https://snowgo.live/tags/istio/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1433,6 +1426,13 @@
   
   <url>
     <loc>https://snowgo.live/tags/gpu/</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://snowgo.live/tags/git/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1495,13 +1495,6 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/sre/</loc>
-    <lastmod>2023-07-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://snowgo.live/tags/tool/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
@@ -1509,7 +1502,7 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/devops/</loc>
+    <loc>https://snowgo.live/tags/sre/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1523,7 +1516,7 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/ebpf/</loc>
+    <loc>https://snowgo.live/tags/devops/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1537,6 +1530,13 @@
   </url>
   
   <url>
+    <loc>https://snowgo.live/tags/ebpf/</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://snowgo.live/tags/iptables/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
@@ -1544,14 +1544,14 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/paper/</loc>
+    <loc>https://snowgo.live/tags/nginx/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/nginx/</loc>
+    <loc>https://snowgo.live/tags/paper/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1593,13 +1593,6 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/%E6%94%B6%E7%9B%8A%E6%8C%87%E6%A0%87/</loc>
-    <lastmod>2023-07-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://snowgo.live/tags/%E6%9C%AC%E7%AB%99%E8%B5%B7%E6%BA%90/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
@@ -1607,14 +1600,21 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/ml/</loc>
+    <loc>https://snowgo.live/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/</loc>
+    <loc>https://snowgo.live/tags/%E6%94%B6%E7%9B%8A%E6%8C%87%E6%A0%87/</loc>
+    <lastmod>2023-07-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://snowgo.live/tags/ml/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1649,14 +1649,14 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/bigdata/</loc>
+    <loc>https://snowgo.live/tags/Pyecharts/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snowgo.live/tags/Pyecharts/</loc>
+    <loc>https://snowgo.live/tags/bigdata/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1707,14 +1707,14 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/</loc>
+    <loc>https://snowgo.live/categories/TOOLS/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snowgo.live/categories/TOOLS/</loc>
+    <loc>https://snowgo.live/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1735,14 +1735,14 @@
   </url>
   
   <url>
-    <loc>https://snowgo.live/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
+    <loc>https://snowgo.live/categories/BIGDATA/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snowgo.live/categories/BIGDATA/</loc>
+    <loc>https://snowgo.live/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
     <lastmod>2023-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
