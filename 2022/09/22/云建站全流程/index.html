@@ -614,7 +614,7 @@
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="keyword">type</span>: <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  </span><br><span class="line">  repository: </span><br><span class="line">    gitee: git@gitee.com:snowgo/root.git</span><br><span class="line">    github: git@github.com:snowgo/snowgo.github.io.git</span><br><span class="line">    repo: snowgo@snowgoblog:/home/snowgo/snowgoblog.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>完成。</p>
 <h2 id="然后再搭建个图床"><a href="#然后再搭建个图床" class="headerlink" title="然后再搭建个图床"></a>然后再搭建个图床</h2><p>再建一个hexo项目，图片放在source文件夹下<br>步骤同上，先git init，再配置好钩子，赋予权限<br>##!/bin/bash<br>#git –work-tree=/www/wwwroot/snowgopic –git-dir=/home/snowgo/snowgoblogpic.git checkout -f<br>再配置一下hexo的deploy就可以了。</p>
-<h2 id="宝塔linux的设置"><a href="#宝塔linux的设置" class="headerlink" title="宝塔linux的设置"></a>宝塔linux的设置</h2><p>php项目，纯静态，推荐配置<br><img src="https://snowgo.top/medias/medias/%E4%BA%91%E5%BB%BA%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/0.png"></p>
+<h2 id="宝塔Linux的设置"><a href="#宝塔Linux的设置" class="headerlink" title="宝塔Linux的设置"></a>宝塔Linux的设置</h2><p>php项目，纯静态，推荐配置<br><img src="https://snowgo.top/medias/medias/%E4%BA%91%E5%BB%BA%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/0.png"></p>
 <h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>DNS解析那里用A标签指向服务器的ip。</p>
 
       </div>
